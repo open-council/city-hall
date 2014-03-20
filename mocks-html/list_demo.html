@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Чернівецька Міська Рада - Міський бюджет 2013</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script src="js/autoNumeric.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<style>
+	.padded-1 {
+		padding-left: 1em !important;
+	}
+	
+	.padded-2 {
+		padding-left: 2em !important;
+	}
+	
+	.padded-3 {
+		padding-left: 3em !important;
+	}
+	
+	.padded-4 {
+		padding-left: 4em !important;
+	}
+	
+	.summary {
+		background-color: #eef;
+	}
+	.active-highlight {
+		background-color: #FFFF00;
+	}
+	.highlight {
+		background-color: #ffff99;
+	}
+	.sub-highlight {
+		background-color: #ffffcc;
+	}
+	
+	.header_wrapper {
+		margin-bottom:2em;
+	}
+	.navigation-list {
+		 padding-left: 0;
+	}
+	.navigation-list li {
+		margin-bottom:0.5em;	
+	}
+	
+	.navigation-list li {
+		border-left: 6px solid #b2c4d7;
+		padding-left: 10px;
+		margin-left: -17px;
+		list-style: none;
+	}
+	.navigation-list .selected {
+		border-left: 6px solid #336699;
+		padding-left: 10px;
+		margin-left: -17px;
+	}
+	li.selected {
+		display: block;
+	}
+	li.selected:after  {
+		position: absolute;
+	   width: 0;
+	   height: 0;
+	   border-left: 100px solid red;
+	   border-top: 50px solid transparent;
+	   border-bottom: 50px solid transparent;
+	}
+	header {
+		background-color: #336699;
+	}
+	header h1 {
+		font-size: 24px;
+    	margin-left: 85px;
+    	text-transform: uppercase;
+    	color: #FFFFFF;
+    	font-weight: bold;
+	}
+	header img {
+		float: left;
+	}
+	.header-wrapper {
+		padding: 1em;
+	}
+	nav.navigation {
+		background-color: #003366;
+	}
+	nav.navigation a {
+		text-transform: uppercase;
+		color: #ffffff;
+	}
+	nav.navigation ul.nav a:hover {
+		color: #003366;
+		background-color: #dddddd;
+	}
+	nav.navigation ul.nav li.active a {
+		color: #003366;
+		background-color: #ffffff;
+	}
+	.documents-list {
+		font-size: 80%;
+	}
+	.breadcrumb-wrapper {
+		border-bottom: 2px solid #003366;
+	}
+	.breadcrumb-wrapper .breadcrumb {
+		margin-bottom: 0;
+	}
+	.table-wrapper table {
+		margin-left: -8px;
+	}
+</style>
+</head>
+
+<body>
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 clearfix header-wrapper">
+				<img src="images/chernivtsi.png" align="left" />
+				<h1>Чернівецька <br/><span>міська рада</span></h1>
+			</div>
+		</div>
+	</div>
+</header>
+
+<nav class="navigation">
+	<div class="container">
+		<div class="row">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#">Головна</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li><a href="#">Про місто</a></li>
+		        <li><a href="#">Туристу</a></li>
+		        <li><a href="#">Інвестору</a></li>
+		        <li class="active"><a href="#">Документи</a></li>
+		        <li><a href="#">Оголошення</a></li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#">Карта порталу</a></li>
+		        <li><a href="#">RSS</a></li>
+			  </ul>
+		    </div>
+	  	</div>
+	</div>
+</nav>
+
+<div class="breadcrumb-wrapper">
+	<div class="container">
+		<div class="row">
+			<ol class="breadcrumb">
+			  <li><a href="#">Документи</a></li>
+			  <li><a href="#">Бюджет міста</a></li>
+			  <li class="active">2013</li>
+			</ol>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-2 documents-list">
+			<h3>Документи</h3>
+				<p><strong>
+					Рішення 31 сесії міської ради VI скликання від 27.12.2012 року
+				</strong></p>
+			<ul class="navigation-list">
+			  <li><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691.doc">№ 691 Про міський бюджет на 2013 рік</a></li>
+			  <li class="selected">Доходи міського бюджету <br/><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691-d1.xls">(Додаток 1)</a></li>
+			  <li>Видатки міського бюджету <br/><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691-d2.doc">(Додаток 2)</a></li>
+			  <li>Розподіл видатків міського бюджету <br/><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691-d3.doc">(Додаток 3)</a></li>
+			  <li><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691-d3-1.doc">Додаток 3.1</a></li>
+			  <li><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691-d4.xls">Додаток 4</a></li>
+			  <li><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691-d5.xls">Додаток 5</a></li>
+			  <li><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691-d6.doc">Додаток 6</a></li>
+			  <li><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691-d7.xls">Додаток 7</a></li>
+			  <li><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691-d8.xls">Додаток 8</a></li>
+			</ul>
+		</div>
+		<div class="col-md-9 col-md-offset-1 table-wrapper">
+			
+			<div class="header_wrapper"><h2>Доходи міського бюджету міста Чернівців на 2013 рік</h2></div>
+<table class="table">
+	
+  <col />
+  <col />
+  <col />
+  <col />
+  <col class="summary"/>
+  <tr>
+    <td rowspan="4"><strong>Найменування доходів згідно із бюджетною класифікацією</strong></td>
+    <td rowspan="4"><strong>Загальний фонд</strong></td>
+    <td colspan="2"><strong>Спеціальний    фонд</strong></td>
+    <td rowspan="4"><strong>Разом</strong></td>
+  </tr>
+  <tr>
+    <td rowspan="3" class="small">Разом</td>
+    <td rowspan="3" class="small">у т.ч. бюджет розвитку</td>
+  </tr>
+  <tr> </tr>
+  <tr> </tr>
+  <tr>  </tr>
+  <tr>
+    <td><strong>Податкові надходження</strong></td>
+    <td><div align="right">398783100</div></td>
+    <td><div align="right">63360000</div></td>
+    <td><div align="right">50300000</div></td>
+    <td><div align="right">462143100</div></td>
+  </tr>
+  <tr class="testRow">
+    <td class="padded-1"><strong>Податки на доходи, податки на прибуток, податки на збільшення    ринкової вартості</strong></td>
+    <td><div align="right">312184000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">312184000</div></td>
+  </tr>
+  <tr class="testHighlight1">
+    <td class="padded-2"><strong>Податок на доходи фізичних осіб</strong></td>
+    <td><div align="right">302421600</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">302421600</div></td>
+  </tr>
+  <tr class="testHighlight2">
+    <td class="padded-3">Податок на доходи фізичних осіб, що сплачується податковими    агентами, із доходів платника податку у вигляді заробітної плати</td>
+    <td><div align="right">262400800</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">262400800</div></td>
+  </tr>
+  <tr class="testHighlight2">
+    <td class="padded-3">Податок на доходи фізичних осіб з грошового забезпечення,    грошових винагород та інших виплат, одержаних військовослужбовцями та особами    рядового і начальницького складу, що сплачується податковими агентами</td>
+    <td><div align="right">22514800</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">22514800</div></td>
+  </tr>
+  <tr class="testHighlight2">
+    <td class="padded-3">Податок на доходи фізичних осіб, що сплачується податковими    агентами, із доходів платника податку інших ніж заробітна плата</td>
+    <td><div align="right">4968000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">4968000</div></td>
+  </tr>
+  <tr class="testHighlight2">
+    <td class="padded-3">Податок на доходи фізичних осіб, що сплачується фізичними    особами за результатами річного декларування</td>
+    <td><div align="right">12538000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">12538000</div></td>
+  </tr>
+  <tr class="testHighlight1">
+    <td class="padded-2"><strong>Податок на прибуток підприємств</strong></td>
+    <td><div align="right">9762400</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">9762400</div></td>
+  </tr>
+  <tr class="testHighlight2">
+    <td class="padded-4">Податок на прибуток підприємств та фінансових установ    комунальної власності</td>
+    <td><div align="right">9762400</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">9762400</div></td>
+  </tr>
+  <tr>
+    <td class="padded-1"><strong>Податки на власність</strong></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">9975000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">9975000</div></td>
+  </tr>
+  <tr>
+    <td class="padded-2"><strong>Збір за першу реєстрацію транспортного засобу</strong></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">9975000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">9975000</div></td>
+  </tr>
+  <tr>
+    <td class="padded-3">Збір за першу реєстрацію    колісних транспортних засобів (юридичних осіб)&nbsp;</td>
+    <td><div align="right"></div></td>
+    <td><div align="right">525000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">525000</div></td>
+  </tr>
+  <tr>
+    <td class="padded-3">Збір за    першу реєстрацію колісних транспортних засобів (фізичних осіб)</td>
+    <td><div align="right"></div></td>
+    <td><div align="right">9450000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">9450000</div></td>
+  </tr>
+  <tr>
+    <td><strong>Збори та плата за спеціальне використання природних ресурсів</strong></td>
+    <td><div align="right">79699100</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">79699100</div></td>
+  </tr>
+  <tr>
+    <td><strong>Збір за спеціальне використання лісових ресурсів&nbsp;</strong></td>
+    <td><div align="right">53000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">53000</div></td>
+  </tr>
+  <tr>
+    <td>Збір за спеціальне використання лісових ресурсів (крім збору за    спеціальне використання лісових ресурсів в частині деревини, заготовленої в    порядку рубок головного користування)&nbsp;</td>
+    <td><div align="right">53000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">53000</div></td>
+  </tr>
+  <tr>
+    <td><strong>Плата за користування надрами&nbsp;</strong></td>
+    <td><div align="right">28000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">28000</div></td>
+  </tr>
+  <tr>
+    <td>Плата за користування надрами для видобування корисних копалин    місцевого значення&nbsp;<br />    </td>
+    <td><div align="right">28000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">28000</div></td>
+  </tr>
+  <tr>
+    <td><strong>Плата за землю</strong></td>
+    <td><div align="right">79618100</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">79618100</div></td>
+  </tr>
+  <tr>
+    <td>Земельний податок з юридичних осіб</td>
+    <td><div align="right">27600100</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">27600100</div></td>
+  </tr>
+  <tr>
+    <td>Орендна плата з юридичних осіб</td>
+    <td><div align="right">40015000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">40015000</div></td>
+  </tr>
+  <tr>
+    <td>Орендна плата з фізичних осіб</td>
+    <td><div align="right">12003000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">12003000</div></td>
+  </tr>
+  <tr>
+    <td>Місцеві податки і збори</td>
+    <td><div align="right">6900000</div></td>
+    <td><div align="right">50535000</div></td>
+    <td><div align="right">50300000</div></td>
+    <td><div align="right">57435000</div></td>
+  </tr>
+  <tr>
+    <td>Збір за місця для паркування транспортних засобів</td>
+    <td><div align="right">590000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">590000</div></td>
+  </tr>
+  <tr>
+    <td>Збір за місця для паркування транспортних засобів, сплачений    юридичними особами</td>
+    <td><div align="right">590000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">590000</div></td>
+  </tr>
+  <tr>
+    <td>Туристичний збір</td>
+    <td><div align="right">110000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">110000</div></td>
+  </tr>
+  <tr>
+    <td>Туристичний збір, сплачений юридичними особами</td>
+    <td><div align="right">85000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">85000</div></td>
+  </tr>
+  <tr>
+    <td>Туристичний збір, сплачений фізичними особами</td>
+    <td><div align="right">25000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">25000</div></td>
+  </tr>
+  <tr>
+    <td>Збір за провадження деяких видів підприємницької діяльності</td>
+    <td><div align="right">6200000</div></td>
+    <td><div align="right">235000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">6435000</div></td>
+  </tr>
+  <tr>
+    <td>Збір за провадження торговельної діяльності (роздрібна    торгівля), сплачений фізичними особами</td>
+    <td><div align="right">1785600</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">1785600</div></td>
+  </tr>
+  <tr>
+    <td>Збір за провадження торговельної діяльності (роздрібна    торгівля), сплачений юридичними особами</td>
+    <td><div align="right">2318800</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">2318800</div></td>
+  </tr>
+  <tr>
+    <td>Збір за провадження торговельної діяльності (оптова торгівля),    сплачений фізичними особами</td>
+    <td><div align="right">45300</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">45300</div></td>
+  </tr>
+  <tr>
+    <td>Збір за провадження торговельної діяльності (ресторанне    господарство), сплачений фізичними особами</td>
+    <td><div align="right">539400</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">539400</div></td>
+  </tr>
+  <tr>
+    <td>Збір за провадження торговельної діяльності (оптова торгівля),    сплачений юридичними особами</td>
+    <td><div align="right">682000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">682000</div></td>
+  </tr>
+  <tr>
+    <td>Збір за провадження торговельної діяльності (ресторанне    господарство), сплачений юридичними особами</td>
+    <td><div align="right">341000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">341000</div></td>
+  </tr>
+  <tr>
+    <td>Збір за провадження торговельної діяльності із придбанням    пільгового торгового патенту&nbsp;</td>
+    <td><div align="right">3100</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">3100</div></td>
+  </tr>
+  <tr>
+    <td>Збір за провадження діяльності    з надання платних послуг, сплачений фізичними особами&nbsp;</td>
+    <td><div align="right">4300</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">4300</div></td>
+  </tr>
+  <tr>
+    <td>Збір за    провадження діяльності з надання платних послуг, сплачений юридичними особами</td>
+    <td><div align="right">94200</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">94200</div></td>
+  </tr>
+  <tr>
+    <td>Збір за провадження торговельної діяльності нафтопродуктами,    скрапленим та стиснутим газом на стаціонарних, малогабаритних і пересувних    автозаправних станціях, заправних пунктах</td>
+    <td><div align="right"></div></td>
+    <td><div align="right">235000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">235000</div></td>
+  </tr>
+  <tr>
+    <td>Збір за здійснення діяльності у сфері розваг, сплачений    юридичними особами</td>
+    <td><div align="right">322400</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">322400</div></td>
+  </tr>
+  <tr>
+    <td>Збір за здійснення діяльності у сфері розваг, сплачений    фізичними особами</td>
+    <td><div align="right">63900</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">63900</div></td>
+  </tr>
+  <tr>
+    <td>Єдиний податок</td>
+    <td><div align="right"></div></td>
+    <td><div align="right">50300000</div></td>
+    <td><div align="right">50300000</div></td>
+    <td><div align="right">50300000</div></td>
+  </tr>
+  <tr>
+    <td>Єдиний податок з юридичних осіб</td>
+    <td><div align="right"></div></td>
+    <td><div align="right">13300000</div></td>
+    <td><div align="right">13300000</div></td>
+    <td><div align="right">13300000</div></td>
+  </tr>
+  <tr>
+    <td>Єдиний податок з фізичних осіб</td>
+    <td><div align="right"></div></td>
+    <td><div align="right">37000000</div></td>
+    <td><div align="right">37000000</div></td>
+    <td><div align="right">37000000</div></td>
+  </tr>
+  <tr>
+    <td>Інші податки та збори</td>
+    <td><div align="right"></div></td>
+    <td><div align="right">2850000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">2850000</div></td>
+  </tr>
+  <tr>
+    <td>Екологічний податок</td>
+    <td><div align="right"></div></td>
+    <td><div align="right">2850000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">2850000</div></td>
+  </tr>
+  <tr>
+    <td>Надходження від викидів забруднюючих речовин в атмосферне    повітря стаціонарними джерелами забруднення</td>
+    <td><div align="right"></div></td>
+    <td><div align="right">182200</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">182200</div></td>
+  </tr>
+  <tr>
+    <td>Надходження    від скидів забруднюючих речовин безпосередньо у водні об'єкти&nbsp;</td>
+    <td><div align="right"></div></td>
+    <td><div align="right">83800</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">83800</div></td>
+  </tr>
+  <tr>
+    <td>Надходження від розміщення відходів у спеціально відведених для    цього місцях чи на об'єктах, крім розміщення окремих видів відходів як    вторинної сировини&nbsp;</td>
+    <td><div align="right"></div></td>
+    <td><div align="right">84000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">84000</div></td>
+  </tr>
+  <tr>
+    <td>Надходження    від ввезення палива на митну територію України податковими агентами</td>
+    <td><div align="right"></div></td>
+    <td><div align="right">2500000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">2500000</div></td>
+  </tr>
+  <tr>
+    <td>Неподаткові надходження</td>
+    <td><div align="right">20505000</div></td>
+    <td><div align="right">19419100</div></td>
+    <td><div align="right">2500000</div></td>
+    <td><div align="right">39924100</div></td>
+  </tr>
+  <tr>
+    <td>Доходи від власності та підприємницької діяльності</td>
+    <td><div align="right">5480000</div></td>
+    <td><div align="right">10000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">5490000</div></td>
+  </tr>
+  <tr>
+    <td>Частина чистого прибутку (доходу) державних унітарних    підприємств та їх об'єднань, що вилучається до бюджету, та дивіденди (доход),    нараховані на акції (частки, паї) господарських товариств, у статутних    капіталах яких є державна власність</td>
+    <td><div align="right">2215000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">2215000</div></td>
+  </tr>
+  <tr>
+    <td>Частина чистого прибутку (доходу) комунальних унітарних    підприємств та їх об'єднань, що вилучається до бюджету</td>
+    <td><div align="right">2215000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">2215000</div></td>
+  </tr>
+  <tr>
+    <td>Плата за розміщення тимчасово вільних коштів місцевих бюджетів</td>
+    <td><div align="right">3100000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">3100000</div></td>
+  </tr>
+  <tr>
+    <td>Інші надходження</td>
+    <td><div align="right">165000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">165000</div></td>
+  </tr>
+  <tr>
+    <td>Штрафні санкції за порушення законодавства про патентування, за    порушення норм регулювання обігу готівки та про застосування реєстраторів    розрахункових операцій у сфері торгівлі, громадського харчування та послуг</td>
+    <td><div align="right">165000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">165000</div></td>
+  </tr>
+  <tr>
+    <td>Надходження коштів від відшкодування втрат    сільськогосподарського і лісогосподарського виробництва&nbsp;</td>
+    <td><div align="right"></div></td>
+    <td><div align="right">10000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">10000</div></td>
+  </tr>
+  <tr>
+    <td>Адміністративні збори та платежі, доходи від некомерційної    господарської діяльності</td>
+    <td><div align="right">14925000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">14925000</div></td>
+  </tr>
+  <tr>
+    <td>Плата за надання адміністративних послуг</td>
+    <td><div align="right">125000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">125000</div></td>
+  </tr>
+  <tr>
+    <td>Реєстраційний збір за проведення державної реєстрації юридичних    осіб та фізичних осіб-підприємців</td>
+    <td><div align="right">125000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">125000</div></td>
+  </tr>
+  <tr>
+    <td>Надходження від орендної плати за користування цілісним майновим    комплексом та іншим державним майном</td>
+    <td><div align="right">14800000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">14800000</div></td>
+  </tr>
+  <tr>
+    <td>Надходження від орендної плати за користування цілісним майновим    комплексом та іншим майном, що перебуває в комунальній власності</td>
+    <td><div align="right">14800000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">14800000</div></td>
+  </tr>
+  <tr>
+    <td>Інші неподаткові надходження</td>
+    <td><div align="right">100000</div></td>
+    <td><div align="right">2635000</div></td>
+    <td><div align="right">2500000</div></td>
+    <td><div align="right">2735000</div></td>
+  </tr>
+  <tr>
+    <td>Інші надходження&nbsp;</td>
+    <td><div align="right">100000</div></td>
+    <td><div align="right">135000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">235000</div></td>
+  </tr>
+  <tr>
+    <td>Інші надходження&nbsp;</td>
+    <td><div align="right">100000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">100000</div></td>
+  </tr>
+  <tr>
+    <td>Грошові стягнення за шкоду, заподіяну порушенням законодавства    про охорону навколишнього природного середовища внаслідок господарської та    іншої діяльності</td>
+    <td><div align="right"></div></td>
+    <td><div align="right">135000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">135000</div></td>
+  </tr>
+  <tr>
+    <td>Надходження    коштів пайової участі у розвитку інфраструктури населеного пункту</td>
+    <td><div align="right"></div></td>
+    <td><div align="right">2500000</div></td>
+    <td><div align="right">2500000</div></td>
+    <td><div align="right">2500000</div></td>
+  </tr>
+  <tr>
+    <td>Власні надходження бюджетних установ&nbsp; </td>
+    <td><div align="right"></div></td>
+    <td><div align="right">16774100</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">16774100</div></td>
+  </tr>
+  <tr>
+    <td>Надходження від плати за послуги, що надаються бюджетними    установами згідно із законодавством&nbsp;</td>
+    <td><div align="right"></div></td>
+    <td><div align="right">16774100</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">16774100</div></td>
+  </tr>
+  <tr>
+    <td>Плата за послуги, що надаються бюджетними установами згідно з їх    основною діяльністю&nbsp;</td>
+    <td><div align="right"></div></td>
+    <td><div align="right">16774100</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">16774100</div></td>
+  </tr>
+  <tr>
+    <td>Доходи від операцій з капіталом</td>
+    <td><div align="right">45000</div></td>
+    <td><div align="right">2000000</div></td>
+    <td><div align="right">2000000</div></td>
+    <td><div align="right">2045000</div></td>
+  </tr>
+  <tr>
+    <td>Надходження від продажу основного капіталу</td>
+    <td><div align="right">45000</div></td>
+    <td><div align="right">500000</div></td>
+    <td><div align="right">500000</div></td>
+    <td><div align="right">545000</div></td>
+  </tr>
+  <tr>
+    <td>Кошти від реалізації скарбів, майна, одержаного державою або    територіальною громадою в порядку спадкування чи дарування, безхазяйного    майна, знахідок, а також валютних цінностей і грошових коштів, власники яких    невідомі&nbsp;</td>
+    <td><div align="right">45000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">45000</div></td>
+  </tr>
+  <tr>
+    <td>Кошти від реалізації безхазяйного майна, знахідок, спадкового    майна, майна, одержаного територіальною громадою в порядку спадкування чи    дарування, а також валютні цінності і грошові кошти, власники яких невідомі    &nbsp;</td>
+    <td><div align="right">45000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">45000</div></td>
+  </tr>
+  <tr>
+    <td>Кошти від відчуження майна, що належить Автономній Республіці    Крим та майна, що перебуває в комунальній власності &nbsp;</td>
+    <td><div align="right"></div></td>
+    <td><div align="right">500000</div></td>
+    <td><div align="right">500000</div></td>
+    <td><div align="right">500000</div></td>
+  </tr>
+  <tr>
+    <td>Кошти від продажу землі і нематеріальних активів</td>
+    <td><div align="right"></div></td>
+    <td><div align="right">1500000</div></td>
+    <td><div align="right">1500000</div></td>
+    <td><div align="right">1500000</div></td>
+  </tr>
+  <tr>
+    <td>Кошти від продажу землі</td>
+    <td><div align="right"></div></td>
+    <td><div align="right">1500000</div></td>
+    <td><div align="right">1500000</div></td>
+    <td><div align="right">1500000</div></td>
+  </tr>
+  <tr>
+    <td>Кошти від продажу земельних ділянок несільськогосподарського    призначення до розмежування земель державної та комунальної власності (крім    земельних ділянок несільськогосподарського призначення, що перебувають у    державній власності, на яких розташовані об'єкти, які підлягають    приватизації, та земельних ділянок, які знаходяться на території Автономної    Республіки Крим)&nbsp;</td>
+    <td><div align="right"></div></td>
+    <td><div align="right">1500000</div></td>
+    <td><div align="right">1500000</div></td>
+    <td><div align="right">1500000</div></td>
+  </tr>
+  <tr>
+    <td>Офіційні трансферти </td>
+    <td><div align="right">393243648</div></td>
+    <td><div align="right">19573100</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">412816748</div></td>
+  </tr>
+  <tr>
+    <td>Від органів державного управління</td>
+    <td><div align="right">393243648</div></td>
+    <td><div align="right">19573100</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">412816748</div></td>
+  </tr>
+  <tr>
+    <td>Дотації </td>
+    <td><div align="right">149279800</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">149279800</div></td>
+  </tr>
+  <tr>
+    <td>Дотації вирівнювання з державного бюджету місцевим бюджетам</td>
+    <td><div align="right">148561600</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">148561600</div></td>
+  </tr>
+  <tr>
+    <td>Інші додаткові дотації &nbsp;</td>
+    <td><div align="right">718200</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">718200</div></td>
+  </tr>
+  <tr>
+    <td>Субвенції</td>
+    <td><div align="right">243963848</div></td>
+    <td><div align="right">19573100</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">263536948</div></td>
+  </tr>
+  <tr>
+    <td>Субвенція з державного бюджету місцевим бюджетам на виплату    допомоги сім'ям з дітьми, малозабезпеченим сім'ям, інвалідам з дитинства,    дітям-інвалідам та тимчасової державної допомоги дітям</td>
+    <td><div align="right">190861800</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">190861800</div></td>
+  </tr>
+  <tr>
+    <td>Субвенція з державного бюджету місцевим бюджетам  на надання пільг та житлових субсидій    населенню на оплату електроенергії, природного газу, послуг тепло-,    водопостачання і водовідведення, квартирної плати (утримання будинків і    споруд та прибудинкових територій), вивезення побутового сміття та рідких    нечистот</td>
+    <td><div align="right">32242900</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">32242900</div></td>
+  </tr>
+  <tr>
+    <td>Субвенція з державного бюджету місцевим бюджетам на надання    пільг з послуг зв'язку, інших передбачених законодавством пільг (крім пільг    на одержання ліків, зубопротезування, оплату електроенергії, природного і    скрапленого газу на побутові потреби, твердого та рідкого пічного побутового    палива, послуг тепло-, водопостачання і водовідведення, квартирної плати    (утримання будинків і споруд та прибудинкових територій), вивезення    побутового сміття та рідких нечистот), на компенсацію втрати частини доходів    у зв'язку з відміною податку з власників транспортних засобів та інших    самохідних машин і механізмів та відповідним збільшенням ставок акцизного    податку з пального і на компенсацію за пільговий проїзд окремих категорій    громадян</td>
+    <td><div align="right">19676100</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">19676100</div></td>
+  </tr>
+  <tr>
+    <td>Субвенція з державного бюджету місцевим бюджетам на надання    пільг та житлових субсидій населенню на придбання твердого та рідкого пічного    побутового палива і скрапленого газу</td>
+    <td><div align="right">74800</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">74800</div></td>
+  </tr>
+  <tr>
+    <td>Субвенція з державного бюджету місцевим бюджетам на будівництво,    реконструкцію, ремонт та утримання вулиць і доріг комунальної власності у    населених пунктах&nbsp;</td>
+    <td><div align="right"></div></td>
+    <td><div align="right">19573100</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">19573100</div></td>
+  </tr>
+  <tr>
+    <td>Інші субвенції</td>
+    <td><div align="right">458248</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">458248</div></td>
+  </tr>
+  <tr>
+    <td>Субвенція з державного бюджету місцевим бюджетам на виплату    державної соціальної допомоги на дітей-сиріт та дітей, позбавлених    батьківського піклування, грошового забезпечення батькам-вихователям і    прийомним батькам за надання соціальних послуг у дитячих будинках сімейного    типу та прийомних сім'ях за принципом &quot;гроші ходять за дитиною&quot;</td>
+    <td><div align="right">650000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">650000</div></td>
+  </tr>
+  <tr>
+    <td>Цільові фонди</td>
+    <td><div align="right"></div></td>
+    <td><div align="right">5000000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">5000000</div></td>
+  </tr>
+  <tr>
+    <td>Інші фонди</td>
+    <td><div align="right"></div></td>
+    <td><div align="right">5000000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">5000000</div></td>
+  </tr>
+  <tr>
+    <td>Цільові фонди, утворені Верховною Радою Автономної Республіки    Крим, органами місцевого самоврядування та місцевими органами виконавчої    влади&nbsp;</td>
+    <td><div align="right"></div></td>
+    <td><div align="right">5000000</div></td>
+    <td><div align="right"></div></td>
+    <td><div align="right">5000000</div></td>
+  </tr>
+  <tr>
+    <td>Всього доходів</td>
+    <td><div align="right">812576748</div></td>
+    <td><div align="right">109352200</div></td>
+    <td><div align="right">54800000</div></td>
+    <td><div align="right">921928948</div></td>
+  </tr>
+</table>
+</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	var spaceSym = $('<div>&nbsp;</div>');
+	$('div').autoNumeric('init', {aSep: '.', aDec: ',', aPad: false});
+</script>
+
+<script type="text/javascript">
+	$('.testRow').click(function() {
+		console.log('worked');
+		$('.testRow td:last-child').addClass('active-highlight');
+		$('.testHighlight1 td:last-child').addClass('highlight');
+ 		$('.testHighlight2 td:last-child').addClass('sub-highlight');
+	})
+	
+</script>
+
+</body>
+</html>
