@@ -16,6 +16,7 @@
 
 
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
         <script type="text/javascript" src="js/plugins/autoNumeric.js"></script>
         <!-- Latest compiled and minified JavaScript -->
@@ -86,11 +87,25 @@
                     <div class="header_wrapper">
                         <h2>Видатки міського бюджету на 2013 рік за тимчасовою класифікацією видатків та кредитування місцевих бюджетів</h2>
                     </div>
-                    <div class="text-right">
+                    <!--<div id="viewBtns" class="btn-group pull-right">-->
+                        <!--<button type="button" view="table" class="btn btn-default"><span class="glyphicon glyphicon-list-alt"></span></button>-->
+                        <!--<button type="button" view="chart" class="btn btn-default"><span class="glyphicon glyphicon-signal"></span></button>-->
+                    <!--</div>-->
+                    <div id="viewBtns" class="btn-group pull-right" data-toggle="buttons">
+                        <label class="btn btn-primary active">
+                            <input type="radio" view="table" checked="checked">
+                            <span class="glyphicon glyphicon-list-alt"></span>
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" view="chart">
+                            <span class="glyphicon glyphicon-signal"></span>
+                        </label>
+                    </div>
+                    <div>
                         <button class="btn btn-success add-line"><span class="glyphicon glyphicon-plus"></span> Додати</button>
                     </div>
                     <br/>
-                    <table id="budgetExpenditures" class="table form-table">
+                    <table id="budgetTableContainer"  id="budgetExpenditures" class="table form-table">
                         <thead>
                             <tr>
                                 <td rowspan="4">Код тимчасової класифікації видатків та кредитування місцевих бюджетів</td>
@@ -198,10 +213,15 @@
                     </div><!-- /.modal -->
                 </div>
             </div>
+            <div id="budgetChartContainer" class="row" style="display: none;">
+                <div class="col-lg-12">
+                    <div id="budgetExpendituresChart" style="width: 100%; height: 500px;"></div>
+                </div>
+            </div>
         </div>
         <script type="text/javascript">
-            var spaceSym = $('<div>&nbsp;</div>');
-            $('div').autoNumeric('init', {aSep: '.', aDec: ',', aPad: false});
+//            var spaceSym = $('<div>&nbsp;</div>');
+//            $('div').autoNumeric('init', {aSep: '.', aDec: ',', aPad: false});
         </script>
         <script type="text/javascript">
             $(function(){
@@ -227,7 +247,6 @@
                             console.log(settings);
                             return(value)}, {
                             "callback": function( sValue, y ) {
-                                /* Redraw the table from the new data on the server */
                                 budgetEpandituresTable.fnDraw();
                             },
                             "height": "20px"
@@ -235,7 +254,40 @@
                     }
                 });
 
+                //Rendering chart
+//                setTimeout(function(){google.load('visualization', '1', {'callback': drawChart, 'packages':['corechart']})}, 2000);
+                google.load('visualization', '1', {'callback': drawChart, 'packages':['corechart']});
+                function drawChart() {
+                    var data = google.visualization.arrayToDataTable([
+                        ['Фонд', 'Сумма'],
+                        ['Державне управління',     23070500],
+                        ['Фонд 1',      23078970],
+                        ['Фонд 2',  25870500],
+                        ['Фонд 3', 15070500],
+                        ['Фонд 4',    3070500]
+                    ]);
 
+                    var options = {
+                        title: 'Видатки міського бюджету'
+                    };
+
+                    var chart = new google.visualization.PieChart($('#budgetExpendituresChart')[0]);
+                    $('#budgetChartContainer').show();
+                    chart.draw(data, options);
+                    $('#budgetChartContainer').hide();
+                }
+
+                $('#viewBtns').find('input').on('change', function() {
+                    if($(this).attr('view') == 'table') {
+                        $('#budgetChartContainer').hide();
+                        $('#budgetTableContainer').show();
+                    } else if($(this).attr('view') == 'chart'){
+                        $('#budgetTableContainer').hide();
+                        $('#budgetChartContainer').show();
+                    }
+                });
+
+                //showing modal form
                 $('.add-line').on('click', function() {
                     $('.modal').modal('show')
                 })
