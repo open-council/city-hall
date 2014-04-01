@@ -1,389 +1,297 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>ЧМР - Адміністративні інструменти</title>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ЧМР - Адміністративні інструменти</title>
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-<script src="js/autoNumeric.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-
-<style>
-	.padded-1 {
-		padding-left: 1em !important;
-	}
-	
-	.padded-2 {
-		padding-left: 2em !important;
-	}
-	
-	.padded-3 {
-		padding-left: 3em !important;
-	}
-	
-	.padded-4 {
-		padding-left: 4em !important;
-	}
-	
-	.summary {
-		background-color: #eef;
-	}
-	.active-highlight {
-		background-color: #FFFF00;
-	}
-	.highlight {
-		background-color: #ffff99;
-	}
-	.sub-highlight {
-		background-color: #ffffcc;
-	}
-	
-	.header_wrapper {
-		margin-bottom:2em;
-	}
-	.navigation-list {
-		 padding-left: 0;
-	}
-	.navigation-list li {
-		margin-bottom:0.5em;	
-	}
-	
-	.navigation-list li {
-		border-left: 6px solid #b2c4d7;
-		padding-left: 10px;
-		margin-left: -17px;
-		list-style: none;
-	}
-	.navigation-list .selected {
-		border-left: 6px solid #336699;
-		padding-left: 10px;
-		margin-left: -17px;
-	}
-	li.selected {
-		display: block;
-	}
-	li.selected:after  {
-		position: absolute;
-	   width: 0;
-	   height: 0;
-	   border-left: 100px solid red;
-	   border-top: 50px solid transparent;
-	   border-bottom: 50px solid transparent;
-	}
-	header {
-		background-color: #336699;
-	}
-	header h1 {
-		font-size: 24px;
-    	margin-left: 85px;
-    	text-transform: none;
-    	color: #FFFFFF;
-    	/*font-weight: bold;*/
-	}
-	header img {
-		float: left;
-	}
-	.header-wrapper {
-		padding: 1em;
-	}
-	nav.navigation {
-		background-color: #003366;
-	}
-	nav.navigation a {
-		text-transform: uppercase;
-		color: #ffffff;
-	}
-	nav.navigation ul.nav a:hover {
-		color: #003366;
-		background-color: #dddddd;
-	}
-	nav.navigation ul.nav li.active a {
-		color: #003366;
-		background-color: #ffffff;
-	}
-	.documents-list {
-		font-size: 80%;
-	}
-	.breadcrumb-wrapper {
-		border-bottom: 2px solid #003366;
-	}
-	.breadcrumb-wrapper .breadcrumb {
-		margin-bottom: 0;
-	}
-	.table-wrapper table {
-		margin-left: -8px;
-	}
-	h1 .subheader {
-		font-size: 77%;
-		text-transform: uppercase;
-	}
-	.form-table {
-		font-size: 11px;
-	}
-	.form-table td {
-		border: 1px solid #DDDDDD !important; 			
-	}
-	img.left-aligned {
-		float: left;
-	}
-	
-</style>
-</head>
-
-<body>
-<header>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 clearfix header-wrapper">
-				<img src="images/chernivtsi.png" class="left-aligned" alt="" />
-				<h1>
-					<span class="subheader">Чернівецька міська рада</span>
-					<br />
-					Панель адміністратора
-					</h1>
-			</div>
-		</div>
-	</div>
-</header>
-
-<nav class="navigation">
-	<div class="container">
-		<div class="row">
-		    <div class="navbar-header">
-		      <a class="navbar-brand" href="#">Панель керування</a>
-		    </div>
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav">
-		        <li class="active"><a href="#">Документи</a></li>
-		        <li><a href="#">Категорії</a></li>
-		      </ul>
-		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="#">Вихід</a></li>
-			  </ul>
-		    </div>
-	  	</div>
-	</div>
-</nav>
-
-<div class="breadcrumb-wrapper">
-	<div class="container">
-		<div class="row">
-			<ol class="breadcrumb">
-			  <li><a href="#">Документи</a></li>
-			  <li><a href="#">Бюджет міста</a></li>
-			  <li><a href="#">2013</a></li>
-			  <li class="active">Видатки</li>
-			</ol>
-		</div>
-	</div>
-</div>
+        <link rel="stylesheet" href="css/plugins/jqueryDataTables/jquery.dataTables.css">
+        <link rel="stylesheet" href="css/plugins/jqueryDataTables/datatables.css">
+        <link rel="stylesheet" href="css/style.css">
 
 
-<div class="container">
-	<div class="row">
-		<!-- <div class="col-md-2 documents-list">
-			<h3>Інструменти</h3>
-			<ul class="navigation-list">
-			  <li><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691.doc">№ 691 Про міський бюджет на 2013 рік</a></li>
-			  <li class="selected">Доходи міського бюджету <br/><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691-d1.xls">(Додаток 1)</a></li>
-			  <li>Видатки міського бюджету <br/><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691-d2.doc">(Додаток 2)</a></li>
-			  <li>Розподіл видатків міського бюджету <br/><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691-d3.doc">(Додаток 3)</a></li>
-			  <li><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691-d3-1.doc">Додаток 3.1</a></li>
-			  <li><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691-d4.xls">Додаток 4</a></li>
-			  <li><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691-d5.xls">Додаток 5</a></li>
-			  <li><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691-d6.doc">Додаток 6</a></li>
-			  <li><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691-d7.xls">Додаток 7</a></li>
-			  <li><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691-d8.xls">Додаток 8</a></li>
-			</ul>
-		</div> -->
-		<div class="col-md-12 table-wrapper">
-			
-			<div class="header_wrapper">
-				<h2>
-					Видатки міського бюджету на 2013 рік за тимчасовою класифікацією видатків та кредитування місцевих бюджетів 
-				</h2>
-				
-			</div>
-<table class="table form-table">
- <tbody><tr>
-  <td rowspan="4">
-  Код тимчасової класифікації видатків та кредитування
-  місцевих бюджетів
-  </td>
-  <td rowspan="4">
-  Найменування
-  коду тимчасової класифікації видатків та кредитування місцевих бюджетів
-  </td>
-  <td colspan="3">
-  Видатки загального фонду
-  </td>
-  <td colspan="7">
-  Видатки спеціального фонду
-  </td>
-  <td rowspan="4">
-  Разом
-  </td>
- </tr>
- <tr>
-  <td rowspan="3">
-  Всього
-  </td>
-  <td colspan="2">
-  з&nbsp;них
-  </td>
-  <td rowspan="3">
-  Всього
-  </td>
-  <td rowspan="3">
-  споживання
-  </td>
-  <td colspan="2">
-  з&nbsp;них
-  </td>
-  <td rowspan="3">
-  розвитку
-  </td>
-  <td colspan="2">
-  з&nbsp;них
-  </td>
- </tr>
- <tr>
-  <td rowspan="2">
-  оплата праці
-  </td>
-  <td rowspan="2">
-  комунальні послуги та енергоносії
-  </td>
-  <td rowspan="2">
-  оплата праці
-  </td>
-  <td rowspan="2">
-  комунальні послуги та енергоносії
-  </td>
-  <td rowspan="2">
-  бюджет розвитку
-  </td>
-  <td>
-  з них
-  </td>
- </tr>
- <tr>
-  <td>
-  капітальні видатки за рахунок коштів, що передаються із загального фонду до бюджету розвитку (спеціального фонду)
-  </td>
- </tr>
- <tr>
- 	<td>010000</td>
- 	<td>Державне управління</td>
- 	<td>23070500</td>
- 	<td>15237500</td>
- 	<td>1047700</td>
- 	<td>311100</td>
- 	<td>0</td>
- 	<td>0</td>
- 	<td>0</td>
- 	<td>311100</td>
- 	<td>311100</td>
- 	<td>0</td>
- 	<td>23381600</td>
- </tr>
-</tbody></table>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
-<div class="modal fade">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title">Новий запис</h4>
-      </div>
-      <div class="modal-body">
-        <form>
-		  <div class="form-group">
-		    <label>Код тимчасової класифікації видатків та кредитування місцевих бюджетів</label>
-		    <select class="form-control">
-			  <option>010000</option>
-			  <option>010116</option>
-			  <option>3</option>
-			  <option>4</option>
-			  <option>5</option>
-			</select>
-		  </div>
-		  <div class="form-group">
-		    <label>Найменування коду тимчасової класифікації видатків та кредитування місцевих бюджетів</label>
-		    <select class="form-control">
-			  <option>Державне управління</option>
-			  <option>Органи мiсцевого самоврядування</option>
-			  <option>3</option>
-			  <option>4</option>
-			  <option>5</option>
-			</select>
-		  </div>
-			<h3>Видатки загального фонду</h3>
-		    <div class="form-group">
-			    <label>Оплата праці</label>
-			    <input type="text" class="form-control">
-		  	</div>
-		  	<div class="form-group">
-		    	<label>Комунальні послуги та енергоносії</label>
-				<input type="text" class="form-control">
-		  	</div>
-		  	<h3>Видатки спеціального фонду</h3>
-		    <div class="form-group">
-			    <label>Оплата праці</label>
-			    <input type="text" class="form-control">
-		  	</div>
-		  	<div class="form-group">
-		    	<label>Комунальні послуги та енергоносії</label>
-				<input type="text" class="form-control">
-		  	</div>
-		  	<div class="form-group">
-		    	<label>Бюджет розвитку</label>
-				<input type="text" class="form-control">
-		  	</div>
-		</form>
+        <script type="text/javascript" src="js/plugins/autoNumeric.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/plugins/jqueryDataTables/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="js/plugins/jqueryDataTables/datatables.js"></script>
+        <script type="text/javascript" src="js/plugins/jquery.jeditable.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 clearfix header-wrapper">
+                        <img src="images/chernivtsi.png" class="left-aligned" alt="" />
+                        <h1><span class="subheader">Чернівецька міська рада</span><br/>Панель адміністратора</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav class="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-header">
+                      <a class="navbar-brand" href="#">Панель керування</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Документи</a></li>
+                        <li><a href="#">Категорії</a></li>
+                      </ul>
+                      <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Вихід</a></li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="breadcrumb-wrapper">
+            <div class="container">
+                <div class="row">
+                    <ol class="breadcrumb">
+                      <li><a href="#">Документи</a></li>
+                      <li><a href="#">Бюджет міста</a></li>
+                      <li><a href="#">2013</a></li>
+                      <li class="active">Видатки</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-md-2 documents-list">
+                    <h3>Інструменти</h3>
+                    <ul class="navigation-list">
+                      <li><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691.doc">№ 691 Про міський бюджет на 2013 рік</a></li>
+                      <li class="selected">Доходи міського бюджету <br/><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691-d1.xls">(Додаток 1)</a></li>
+                      <li>Видатки міського бюджету <br/><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691-d2.doc">(Додаток 2)</a></li>
+                      <li>Розподіл видатків міського бюджету <br/><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691-d3.doc">(Додаток 3)</a></li>
+                      <li><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691-d3-1.doc">Додаток 3.1</a></li>
+                      <li><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691-d4.xls">Додаток 4</a></li>
+                      <li><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691-d5.xls">Додаток 5</a></li>
+                      <li><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691-d6.doc">Додаток 6</a></li>
+                      <li><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691-d7.xls">Додаток 7</a></li>
+                      <li><a href="http://chernivtsy.eu/portal/f/mr/ses2012031-691-d8.xls">Додаток 8</a></li>
+                    </ul>
+                </div> -->
+                <div class="col-md-12 table-wrapper">
+                    <div class="header_wrapper">
+                        <h2>Видатки міського бюджету на 2013 рік за тимчасовою класифікацією видатків та кредитування місцевих бюджетів</h2>
+                    </div>
+                    <!--<div id="viewBtns" class="btn-group pull-right">-->
+                        <!--<button type="button" view="table" class="btn btn-default"><span class="glyphicon glyphicon-list-alt"></span></button>-->
+                        <!--<button type="button" view="chart" class="btn btn-default"><span class="glyphicon glyphicon-signal"></span></button>-->
+                    <!--</div>-->
+                    <div id="viewBtns" class="btn-group pull-right" data-toggle="buttons">
+                        <label class="btn btn-primary active">
+                            <input type="radio" view="table" checked="checked">
+                            <span class="glyphicon glyphicon-list-alt"></span>
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" view="chart">
+                            <span class="glyphicon glyphicon-signal"></span>
+                        </label>
+                    </div>
+                    <div>
+                        <button class="btn btn-success add-line"><span class="glyphicon glyphicon-plus"></span> Додати</button>
+                    </div>
+                    <br/>
+                    <table id="budgetTableContainer"  id="budgetExpenditures" class="table form-table">
+                        <thead>
+                            <tr>
+                                <td rowspan="4">Код тимчасової класифікації видатків та кредитування місцевих бюджетів</td>
+                                <td rowspan="4">Найменування коду тимчасової класифікації видатків та кредитування місцевих бюджетів</td>
+                                <td colspan="3">Видатки загального фонду</td>
+                                <td colspan="7">Видатки спеціального фонду</td>
+                                <td rowspan="4">Разом</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">Всього</td>
+                                <td colspan="2">з них</td>
+                                <td rowspan="3">Всього</td>
+                                <td rowspan="3">споживання</td>
+                                <td colspan="2">зних</td>
+                                <td rowspan="3">розвитку</td>
+                                <td colspan="2">зних</td>
+                            </tr>
+                            <tr>
+                            <td rowspan="2"> оплата праці</td>
+                                <td rowspan="2"> комунальні послуги та енергоносії</td>
+                                <td rowspan="2"> оплата праці</td>
+                                <td rowspan="2"> комунальні послуги та енергоносії</td>
+                                <td rowspan="2"> бюджет розвитку</td>
+                                <td> з них</td>
+                            </tr>
+                            <tr>
+                                <td>капітальні видатки за рахунок коштів, що передаються із загального фонду до бюджету розвитку (спеціального фонду)</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
+                            <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
+                            <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
+                            <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
+                            <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
+                            <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
+                            <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
+                            <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
+                            <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
+                            <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
+                            <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
+                        </tbody>
+                    </table>
 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Відміна</button>
-        <button type="button" class="btn btn-primary">Зберегти</button>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+                    <div class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="close" data-dismiss="modal" type="button">×</button>
+                                    <h4 class="modal-title">Новий запис</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label>Код тимчасової класифікації видатків та кредитування місцевих бюджетів</label>
+                                            <select class="form-control">
+                                                <option>010000</option>
+                                                <option>010116</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Найменування коду тимчасової класифікації видатків та кредитування місцевих бюджетів</label>
+                                            <select class="form-control">
+                                                <option>Державне управління</option>
+                                                <option>Органи мiсцевого самоврядування</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                        <h3>Видатки загального фонду</h3>
+                                        <div class="form-group">
+                                            <label>Оплата праці</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Комунальні послуги та енергоносії</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <h3>Видатки спеціального фонду</h3>
+                                        <div class="form-group">
+                                            <label>Оплата праці</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Комунальні послуги та енергоносії</label>
+                                            <input class="form-control" type="text">
+                                        </div>
 
+                                        <div class="form-group">
+                                            <label>Бюджет розвитку</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-default" data-dismiss="modal" type="button">Відміна</button>
+                                    <button class="btn btn-primary" type="button">Зберегти</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+                </div>
+            </div>
+            <div id="budgetChartContainer" class="row" style="display: none;">
+                <div class="col-lg-12">
+                    <div id="budgetExpendituresChart" style="width: 100%; height: 500px;"></div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+//            var spaceSym = $('<div>&nbsp;</div>');
+//            $('div').autoNumeric('init', {aSep: '.', aDec: ',', aPad: false});
+        </script>
+        <script type="text/javascript">
+            $(function(){
+//                $('.testRow').click(function() {
+//                    console.log('worked');
+//                    $('.testRow td:last-child').addClass('active-highlight');
+//                    $('.testHighlight1 td:last-child').addClass('highlight');
+//                    $('.testHighlight2 td:last-child').addClass('sub-highlight');
+//                })
 
-<button class="btn add-line">Додати</button>
+                var budgetEpandituresTable = $('#budgetExpenditures').dataTable({
+                    "oLanguage": {
+                        "sUrl": "js/plugins/jqueryDataTables/localization/ukrainian.txt"
+                    },
+                    "sDom": "<'row'<'col-lg-6'l><'col-lg-6'f>r>t<'row'<'col-lg-6'i><'col-lg-6'p>>",
+                    'fnDrawCallback': function() {
+                        $('.dataTables_filter').find('input').addClass('form-control input-sm search-input');
+                        $('.dataTables_length').find('select').addClass('form-control input-sm');
+                        $('.dataTables_paginate').find('ul').css('margin-right', '8px');
+                        $('#budgetExpenditures tbody td').editable( function(value, settings) {
+                            console.log(this);
+                            console.log(value);
+                            console.log(settings);
+                            return(value)}, {
+                            "callback": function( sValue, y ) {
+                                budgetEpandituresTable.fnDraw();
+                            },
+                            "height": "20px"
+                        } );
+                    }
+                });
 
-</div>
-	</div>
-</div>
+                //Rendering chart
+//                setTimeout(function(){google.load('visualization', '1', {'callback': drawChart, 'packages':['corechart']})}, 2000);
+                google.load('visualization', '1', {'callback': drawChart, 'packages':['corechart']});
+                function drawChart() {
+                    var data = google.visualization.arrayToDataTable([
+                        ['Фонд', 'Сумма'],
+                        ['Державне управління',     23070500],
+                        ['Фонд 1',      23078970],
+                        ['Фонд 2',  25870500],
+                        ['Фонд 3', 15070500],
+                        ['Фонд 4',    3070500]
+                    ]);
 
-<script type="text/javascript">
-	var spaceSym = $('<div>&nbsp;</div>');
-	$('div').autoNumeric('init', {aSep: '.', aDec: ',', aPad: false});
-</script>
+                    var options = {
+                        title: 'Видатки міського бюджету'
+                    };
 
-<script type="text/javascript">
-	$('.testRow').click(function() {
-		console.log('worked');
-		$('.testRow td:last-child').addClass('active-highlight');
-		$('.testHighlight1 td:last-child').addClass('highlight');
- 		$('.testHighlight2 td:last-child').addClass('sub-highlight');
-	})
-	
-	$('.add-line').click(function() {
-		$('.modal').modal('show')
-	})
-	
-</script>
+                    var chart = new google.visualization.PieChart($('#budgetExpendituresChart')[0]);
+                    $('#budgetChartContainer').show();
+                    chart.draw(data, options);
+                    $('#budgetChartContainer').hide();
+                }
 
-</body>
+                $('#viewBtns').find('input').on('change', function() {
+                    if($(this).attr('view') == 'table') {
+                        $('#budgetChartContainer').hide();
+                        $('#budgetTableContainer').show();
+                    } else if($(this).attr('view') == 'chart'){
+                        $('#budgetTableContainer').hide();
+                        $('#budgetChartContainer').show();
+                    }
+                });
+
+                //showing modal form
+                $('.add-line').on('click', function() {
+                    $('.modal').modal('show')
+                })
+            })
+        </script>
+    </body>
 </html>
