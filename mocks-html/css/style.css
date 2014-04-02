@@ -115,3 +115,72 @@ h1 .subheader {
 img.left-aligned {
     float: left;
 }
+
+.nav-font {
+	font-family: 'RistrettoPro-Regular';
+	font-size: 24px; 
+}
+
+.top-line-menu {
+	margin-left: -15px;
+}
+
+.navbar-nav > li > a {
+	padding: 15px 10px;
+}
+
+.super-navigation {
+	padding-left:0;
+}
+
+.super-navigation li {
+	list-style: outside !important;
+}
+
+.super-navigation li > a {
+	text-decoration: underline;
+	padding: 5px 10px;
+}
+
+.super-navigation li li {
+	padding: 5px 0;
+}
+
+.super-navigation li li a {
+	padding: 0;
+}
+.search-block {
+	color: white;
+	padding-top: 40px;
+}
+
+.search-block label {
+	position: relative;
+	left: -150px;
+}
+
+.news-wrapper {
+	font-size: 85%;
+}
+
+footer {
+	background-color: #336699;
+	color: white;
+}
+
+.footer-copy {
+	background-color: #003366;
+	color: white;
+}
+
+footer .row {
+	padding: 1em;	
+}
+
+footer a {
+	color: white;
+	text-decoration: underline;
+}
+footer a:hover {
+	color: #eeeeff;
+}
