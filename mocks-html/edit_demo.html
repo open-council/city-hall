@@ -87,15 +87,12 @@
                     <div class="header_wrapper">
                         <h2>Видатки міського бюджету на 2013 рік за тимчасовою класифікацією видатків та кредитування місцевих бюджетів</h2>
                     </div>
-                    <!--<div id="viewBtns" class="btn-group pull-right">-->
-                        <!--<button type="button" view="table" class="btn btn-default"><span class="glyphicon glyphicon-list-alt"></span></button>-->
-                        <!--<button type="button" view="chart" class="btn btn-default"><span class="glyphicon glyphicon-signal"></span></button>-->
-                    <!--</div>-->
+                    <hr/>
                     <div id="viewBtns" class="btn-group pull-right" data-toggle="buttons">
                         <label class="btn btn-primary active">
-                        	Таблиця
                             <input type="radio" view="table" checked="checked">
                             <span class="glyphicon glyphicon-list-alt"></span>
+                            Таблиця
                         </label>
                         <label class="btn btn-primary">
                         	Графік
@@ -107,8 +104,9 @@
                         <button class="btn btn-success add-line"><span class="glyphicon glyphicon-plus"></span> Додати</button>
                     </div>
                     <br/>
-                    <table id="budgetTableContainer"  id="budgetExpenditures" class="table form-table">
-                        <thead>
+                    <div id="budgetTableContainer">
+                        <table id="budgetExpenditures" class="table form-table">
+                            <thead>
                             <tr>
                                 <td rowspan="4">Код тимчасової класифікації видатків та кредитування місцевих бюджетів</td>
                                 <td rowspan="4">Найменування коду тимчасової класифікації видатків та кредитування місцевих бюджетів</td>
@@ -126,7 +124,7 @@
                                 <td colspan="2">зних</td>
                             </tr>
                             <tr>
-                            <td rowspan="2"> оплата праці</td>
+                                <td rowspan="2"> оплата праці</td>
                                 <td rowspan="2"> комунальні послуги та енергоносії</td>
                                 <td rowspan="2"> оплата праці</td>
                                 <td rowspan="2"> комунальні послуги та енергоносії</td>
@@ -136,21 +134,22 @@
                             <tr>
                                 <td>капітальні видатки за рахунок коштів, що передаються із загального фонду до бюджету розвитку (спеціального фонду)</td>
                             </tr>
-                        </thead>
-                        <tbody>
-                            <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
-                            <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
-                            <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
-                            <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
-                            <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
-                            <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
-                            <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
-                            <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
-                            <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
-                            <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
-                            <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
-                        </tbody>
-                    </table>
+                            </thead>
+                            <tbody>
+                                <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
+                                <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
+                                <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
+                                <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
+                                <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
+                                <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
+                                <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
+                                <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
+                                <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
+                                <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
+                                <tr> <td>010000</td> <td>Державне управління</td> <td>23070500</td> <td>15237500</td> <td>1047700</td> <td>311100</td> <td>0</td> <td>0</td> <td>0</td> <td>311100</td> <td>311100</td> <td>0</td> <td>23381600</td> </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
                     <div class="modal fade">
                         <div class="modal-dialog">
@@ -218,6 +217,7 @@
             <div id="budgetChartContainer" class="row" style="display: none;">
                 <div class="col-lg-12">
                     <div id="budgetExpendituresChart" style="width: 100%; height: 500px;"></div>
+                    <div id="budgetExpendituresSubChart" style="width: 100%; height: 500px;"></div>
                 </div>
             </div>
         </div>
@@ -276,7 +276,6 @@
                 });
 
                 //Rendering chart
-//                setTimeout(function(){google.load('visualization', '1', {'callback': drawChart, 'packages':['corechart']})}, 2000);
                 google.load('visualization', '1', {'callback': drawChart, 'packages':['corechart']});
                 function drawChart() {
                     var data = google.visualization.arrayToDataTable([
@@ -296,6 +295,35 @@
                     $('#budgetChartContainer').show();
                     chart.draw(data, options);
                     $('#budgetChartContainer').hide();
+
+                    google.visualization.events.addListener(chart, 'select', function() {
+                        var selected = chart.getSelection();
+                        $('#budgetExpendituresSubChart').empty();
+                        drawNewChart();
+                    });
+                }
+
+                function drawNewChart() {
+                    google.load('visualization', '1', {'callback': drawNewChart, 'packages': ['corechart']});
+                    function drawNewChart() {
+                        var data = google.visualization.arrayToDataTable([
+                            ['Суб Фонд', 'Сумма'],
+                            ['Суб Фонд 1', 3070500],
+                            ['Суб Фонд 2', 3078970],
+                            ['Суб Фонд 3', 5870500],
+                            ['Суб Фонд 4', 5070500],
+                            ['Суб Фонд 5', 070500]
+                        ]);
+
+                        var options = {
+                            title: 'Видатки міського бюджету -> Суб фонди'
+                        };
+
+                        var chart = new google.visualization.PieChart($('#budgetExpendituresSubChart')[0]);
+//                        $('#budgetChartContainer').show();
+                        chart.draw(data, options);
+//                        $('#budgetChartContainer').hide();
+                    };
                 }
 
                 $('#viewBtns').find('input').on('change', function() {
