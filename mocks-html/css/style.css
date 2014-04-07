@@ -52,11 +52,16 @@
     /*border-left: 6px solid #336699;*/
     padding-left: 22px;
     margin-left: -18px;
+    padding-right: 5px;
     background-color: #336699;
 }
+.navigation-list .selected,
 .navigation-list .selected a,
 .navigation-list .selected a:hover {
 	color: white;
+}
+.navigation-list .selected a {
+	text-decoration: underline;
 }
 li.selected {
     display: block;
@@ -224,4 +229,15 @@ footer a:hover {
 }
 .document-header {
 	border-bottom: 2px solid #336699; 
+}
+.main-content {
+	margin-left: 50px;
+}
+
+.table-wrapper table tr:nth-child(n+3) td:nth-child(n+3) {
+	text-align: right !important;
+}
+
+.addon1 {
+	margin-bottom:1em;
 }

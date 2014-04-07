@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Чернівецька Міська Рада - Міський бюджет 2013</title>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+        <script src="js/plugins/autoNumeric.js"></script>
+        <script src="js/d3.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 clearfix header-wrapper">
+                        <img src="images/chernivtsi.png" align="left" />
+                        <h1>Чернівецька <br/><span>міська рада</span></h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav class="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-header">
+                      <a class="navbar-brand" href="#">Головна</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">
+                        <li><a href="#">Про місто</a></li>
+                        <li><a href="#">Туристу</a></li>
+                        <li><a href="#">Інвестору</a></li>
+                        <li><a href="#">Документи</a></li>
+                        <li class="active"><a href="#">Бюджет міста</a></li>
+                        <li><a href="#">Оголошення</a></li>
+                      </ul>
+                      <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Карта порталу</a></li>
+                        <li><a href="#">RSS</a></li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="breadcrumb-wrapper">
+            <div class="container">
+                <div class="row">
+                    <ol class="breadcrumb">
+                      <li><a href="#">Бюджет міста</a></li>
+                      <li class="active">2014</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="container main-content">
+            <div class="row">
+                <div class="col-md-2 documents-list">
+                    <h3>Документи</h3>
+                        <p><strong>
+                            Рішення 44 сесії міської ради VI скликання від 30.01.2014 року
+                        </strong></p>
+                    <ul class="navigation-list">
+                      <li class="selected"><a href="http://chernivtsy.eu/portal/f/mr/ses2014044-1093.doc">№1093 Про міський бюджет на 2014 рік</a></li>
+					  <li><a href="http://chernivtsy.eu/portal/f/mr/ses2014044-1093-d1.xls">Додаток 1</a></li>
+					  <li><a href="http://chernivtsy.eu/portal/f/mr/ses2014044-1093-d2.doc">Додаток 2</a></li>
+					  <li><a href="http://chernivtsy.eu/portal/f/mr/ses2014044-1093-d3.doc">Додаток 3</a></li>
+					  <li><a href="http://chernivtsy.eu/portal/f/mr/ses2014044-1093-d3-1.doc">Додаток 3.1</a></li>
+					  <li><a href="http://chernivtsy.eu/portal/f/mr/ses2014044-1093-d4.xls">Додаток 4</a></li>
+					  <li><a href="http://chernivtsy.eu/portal/f/mr/ses2014044-1093-d5.xls">Додаток 5</a></li>
+					  <li><a href="http://chernivtsy.eu/portal/f/mr/ses2014044-1093-d6.doc">Додаток 6</a></li>
+					  <li><a href="http://chernivtsy.eu/portal/f/mr/ses2014044-1093-d7.xls">Додаток 7</a></li>
+					  <li><a href="http://chernivtsy.eu/portal/f/mr/ses2014044-1093-d8.xls">Додаток 8</a></li>
+					</ul>
+                    </ul>
+                </div>
+                <div class="col-md-12">
+                	<div class="document-header header_wrapper">
+                		<h2>Тестування графічних бібліотек</h2>
+            		</div>
+            		<div id="viz"></div>
+				    <script type="text/javascript">
+		
+				    </script>
+        		</div>
+            </div>
+        </div>
+		<footer>
+			<div class="container">
+                <div class="row">
+                	<p>
+	                	<strong>Поштова адреса: </strong>Центральна площа, 1, 58000 м. Чернівці<br>
+						<strong>Телефон:</strong> (0372) 52-59-24<br>
+						<strong>Факс:</strong> (0372) 55-35-39<strong> </strong><br>
+						<strong>E-mail: </strong><a href="mailto:document@rada.cv.ua">document@rada.cv.ua</a><strong> </strong><br>
+					</p> 
+            	</div>
+        	</div>
+        	<div class="footer-copy">
+        		<div class="container">
+                	<div class="row">
+        				&copy; Чернівецька міська рада, 2000-2014. Контакт: Web-майстер, Чернівецька міська рада
+    				</div>
+				</div>
+    		</div>
+		</footer>
+        <script type="text/javascript">
+            var spaceSym = $('<div>&nbsp;</div>');
+            $('div').autoNumeric('init', {aSep: '.', aDec: ',', aPad: false});
+        </script>
+
+        <script type="text/javascript">
+            $('.testRow').click(function() {
+                console.log('worked');
+                $('.testRow td:last-child').addClass('active-highlight');
+                $('.testHighlight1 td:last-child').addClass('highlight');
+                $('.testHighlight2 td:last-child').addClass('sub-highlight');
+            })
+
+        </script>
+
+    </body>
+</html>
