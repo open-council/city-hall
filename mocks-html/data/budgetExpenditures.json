@@ -1,0 +1,2302 @@
+[
+    {
+        "fundCode": 349132,
+        "foundName": "magna nisi",
+        "generalFund": {
+            "wages": 269848,
+            "utilities": 719346,
+            "total": 989194
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 140228,
+                "utilities": 263897,
+                "total": 404125
+            },
+            "development": {
+                "developmentBudget": 830345,
+                "fromGeneralBudget": 547509,
+                "total": 1377854
+            },
+            "total": 1781979
+        },
+        "total": 2771173
+    },
+    {
+        "fundCode": 365929,
+        "foundName": "nostrud pariatur",
+        "generalFund": {
+            "wages": 899404,
+            "utilities": 856116,
+            "total": 1755520
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 141844,
+                "utilities": 862192,
+                "total": 1004036
+            },
+            "development": {
+                "developmentBudget": 146745,
+                "fromGeneralBudget": 449973,
+                "total": 596718
+            },
+            "total": 1600754
+        },
+        "total": 3356274
+    },
+    {
+        "fundCode": 889032,
+        "foundName": "esse mollit",
+        "generalFund": {
+            "wages": 52141,
+            "utilities": 542849,
+            "total": 594990
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 579801,
+                "utilities": 749164,
+                "total": 1328965
+            },
+            "development": {
+                "developmentBudget": 520578,
+                "fromGeneralBudget": 547087,
+                "total": 1067665
+            },
+            "total": 2396630
+        },
+        "total": 2991620
+    },
+    {
+        "fundCode": 600380,
+        "foundName": "proident ad",
+        "generalFund": {
+            "wages": 594449,
+            "utilities": 152740,
+            "total": 747189
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 236750,
+                "utilities": 622554,
+                "total": 859304
+            },
+            "development": {
+                "developmentBudget": 644609,
+                "fromGeneralBudget": 564163,
+                "total": 1208772
+            },
+            "total": 2068076
+        },
+        "total": 2815265
+    },
+    {
+        "fundCode": 506145,
+        "foundName": "in pariatur",
+        "generalFund": {
+            "wages": 154749,
+            "utilities": 4601,
+            "total": 159350
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 408551,
+                "utilities": 658988,
+                "total": 1067539
+            },
+            "development": {
+                "developmentBudget": 691153,
+                "fromGeneralBudget": 765911,
+                "total": 1457064
+            },
+            "total": 2524603
+        },
+        "total": 2683953
+    },
+    {
+        "fundCode": 449283,
+        "foundName": "velit anim",
+        "generalFund": {
+            "wages": 344219,
+            "utilities": 671078,
+            "total": 1015297
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 101715,
+                "utilities": 159628,
+                "total": 261343
+            },
+            "development": {
+                "developmentBudget": 721035,
+                "fromGeneralBudget": 375293,
+                "total": 1096328
+            },
+            "total": 1357671
+        },
+        "total": 2372968
+    },
+    {
+        "fundCode": 829461,
+        "foundName": "proident eu",
+        "generalFund": {
+            "wages": 153182,
+            "utilities": 105879,
+            "total": 259061
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 450486,
+                "utilities": 262464,
+                "total": 712950
+            },
+            "development": {
+                "developmentBudget": 18931,
+                "fromGeneralBudget": 270534,
+                "total": 289465
+            },
+            "total": 1002415
+        },
+        "total": 1261476
+    },
+    {
+        "fundCode": 501241,
+        "foundName": "sit tempor",
+        "generalFund": {
+            "wages": 371427,
+            "utilities": 289883,
+            "total": 661310
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 476052,
+                "utilities": 466795,
+                "total": 942847
+            },
+            "development": {
+                "developmentBudget": 333203,
+                "fromGeneralBudget": 222974,
+                "total": 556177
+            },
+            "total": 1499024
+        },
+        "total": 2160334
+    },
+    {
+        "fundCode": 78573,
+        "foundName": "deserunt do",
+        "generalFund": {
+            "wages": 560708,
+            "utilities": 149582,
+            "total": 710290
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 110809,
+                "utilities": 537474,
+                "total": 648283
+            },
+            "development": {
+                "developmentBudget": 327092,
+                "fromGeneralBudget": 173722,
+                "total": 500814
+            },
+            "total": 1149097
+        },
+        "total": 1859387
+    },
+    {
+        "fundCode": 200773,
+        "foundName": "culpa aliquip",
+        "generalFund": {
+            "wages": 101110,
+            "utilities": 643514,
+            "total": 744624
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 394397,
+                "utilities": 667428,
+                "total": 1061825
+            },
+            "development": {
+                "developmentBudget": 865280,
+                "fromGeneralBudget": 55117,
+                "total": 920397
+            },
+            "total": 1982222
+        },
+        "total": 2726846
+    },
+    {
+        "fundCode": 169378,
+        "foundName": "occaecat tempor",
+        "generalFund": {
+            "wages": 871010,
+            "utilities": 341334,
+            "total": 1212344
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 393024,
+                "utilities": 689035,
+                "total": 1082059
+            },
+            "development": {
+                "developmentBudget": 495816,
+                "fromGeneralBudget": 782852,
+                "total": 1278668
+            },
+            "total": 2360727
+        },
+        "total": 3573071
+    },
+    {
+        "fundCode": 456591,
+        "foundName": "ea fugiat",
+        "generalFund": {
+            "wages": 330985,
+            "utilities": 61534,
+            "total": 392519
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 210066,
+                "utilities": 817843,
+                "total": 1027909
+            },
+            "development": {
+                "developmentBudget": 775772,
+                "fromGeneralBudget": 660571,
+                "total": 1436343
+            },
+            "total": 2464252
+        },
+        "total": 2856771
+    },
+    {
+        "fundCode": 851821,
+        "foundName": "qui commodo",
+        "generalFund": {
+            "wages": 545106,
+            "utilities": 353594,
+            "total": 898700
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 41953,
+                "utilities": 573830,
+                "total": 615783
+            },
+            "development": {
+                "developmentBudget": 600909,
+                "fromGeneralBudget": 354836,
+                "total": 955745
+            },
+            "total": 1571528
+        },
+        "total": 2470228
+    },
+    {
+        "fundCode": 393184,
+        "foundName": "quis est",
+        "generalFund": {
+            "wages": 126166,
+            "utilities": 594499,
+            "total": 720665
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 291296,
+                "utilities": 285219,
+                "total": 576515
+            },
+            "development": {
+                "developmentBudget": 884558,
+                "fromGeneralBudget": 370370,
+                "total": 1254928
+            },
+            "total": 1831443
+        },
+        "total": 2552108
+    },
+    {
+        "fundCode": 787063,
+        "foundName": "amet dolor",
+        "generalFund": {
+            "wages": 162518,
+            "utilities": 604348,
+            "total": 766866
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 226468,
+                "utilities": 893310,
+                "total": 1119778
+            },
+            "development": {
+                "developmentBudget": 3695,
+                "fromGeneralBudget": 252338,
+                "total": 256033
+            },
+            "total": 1375811
+        },
+        "total": 2142677
+    },
+    {
+        "fundCode": 99558,
+        "foundName": "dolore esse",
+        "generalFund": {
+            "wages": 256312,
+            "utilities": 62812,
+            "total": 319124
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 126800,
+                "utilities": 360090,
+                "total": 486890
+            },
+            "development": {
+                "developmentBudget": 720621,
+                "fromGeneralBudget": 102954,
+                "total": 823575
+            },
+            "total": 1310465
+        },
+        "total": 1629589
+    },
+    {
+        "fundCode": 258173,
+        "foundName": "magna cillum",
+        "generalFund": {
+            "wages": 167377,
+            "utilities": 303106,
+            "total": 470483
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 875792,
+                "utilities": 474696,
+                "total": 1350488
+            },
+            "development": {
+                "developmentBudget": 86954,
+                "fromGeneralBudget": 342790,
+                "total": 429744
+            },
+            "total": 1780232
+        },
+        "total": 2250715
+    },
+    {
+        "fundCode": 674210,
+        "foundName": "nisi ea",
+        "generalFund": {
+            "wages": 830671,
+            "utilities": 270587,
+            "total": 1101258
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 831347,
+                "utilities": 868110,
+                "total": 1699457
+            },
+            "development": {
+                "developmentBudget": 494757,
+                "fromGeneralBudget": 410295,
+                "total": 905052
+            },
+            "total": 2604509
+        },
+        "total": 3705767
+    },
+    {
+        "fundCode": 265233,
+        "foundName": "aliquip est",
+        "generalFund": {
+            "wages": 515882,
+            "utilities": 111813,
+            "total": 627695
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 58326,
+                "utilities": 179590,
+                "total": 237916
+            },
+            "development": {
+                "developmentBudget": 177833,
+                "fromGeneralBudget": 491134,
+                "total": 668967
+            },
+            "total": 906883
+        },
+        "total": 1534578
+    },
+    {
+        "fundCode": 569278,
+        "foundName": "do excepteur",
+        "generalFund": {
+            "wages": 10857,
+            "utilities": 355413,
+            "total": 366270
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 868200,
+                "utilities": 318648,
+                "total": 1186848
+            },
+            "development": {
+                "developmentBudget": 736937,
+                "fromGeneralBudget": 309866,
+                "total": 1046803
+            },
+            "total": 2233651
+        },
+        "total": 2599921
+    },
+    {
+        "fundCode": 297804,
+        "foundName": "et commodo",
+        "generalFund": {
+            "wages": 179132,
+            "utilities": 663656,
+            "total": 842788
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 196347,
+                "utilities": 495200,
+                "total": 691547
+            },
+            "development": {
+                "developmentBudget": 153120,
+                "fromGeneralBudget": 684490,
+                "total": 837610
+            },
+            "total": 1529157
+        },
+        "total": 2371945
+    },
+    {
+        "fundCode": 418240,
+        "foundName": "proident cillum",
+        "generalFund": {
+            "wages": 371736,
+            "utilities": 215052,
+            "total": 586788
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 196082,
+                "utilities": 102231,
+                "total": 298313
+            },
+            "development": {
+                "developmentBudget": 562956,
+                "fromGeneralBudget": 772072,
+                "total": 1335028
+            },
+            "total": 1633341
+        },
+        "total": 2220129
+    },
+    {
+        "fundCode": 586245,
+        "foundName": "ut tempor",
+        "generalFund": {
+            "wages": 238902,
+            "utilities": 605538,
+            "total": 844440
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 228723,
+                "utilities": 898981,
+                "total": 1127704
+            },
+            "development": {
+                "developmentBudget": 143163,
+                "fromGeneralBudget": 664509,
+                "total": 807672
+            },
+            "total": 1935376
+        },
+        "total": 2779816
+    },
+    {
+        "fundCode": 695630,
+        "foundName": "occaecat sint",
+        "generalFund": {
+            "wages": 198072,
+            "utilities": 644791,
+            "total": 842863
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 358996,
+                "utilities": 840680,
+                "total": 1199676
+            },
+            "development": {
+                "developmentBudget": 532950,
+                "fromGeneralBudget": 770865,
+                "total": 1303815
+            },
+            "total": 2503491
+        },
+        "total": 3346354
+    },
+    {
+        "fundCode": 95045,
+        "foundName": "non reprehenderit",
+        "generalFund": {
+            "wages": 693572,
+            "utilities": 859432,
+            "total": 1553004
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 261338,
+                "utilities": 255756,
+                "total": 517094
+            },
+            "development": {
+                "developmentBudget": 555815,
+                "fromGeneralBudget": 825318,
+                "total": 1381133
+            },
+            "total": 1898227
+        },
+        "total": 3451231
+    },
+    {
+        "fundCode": 584334,
+        "foundName": "ullamco irure",
+        "generalFund": {
+            "wages": 259310,
+            "utilities": 817205,
+            "total": 1076515
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 46190,
+                "utilities": 844014,
+                "total": 890204
+            },
+            "development": {
+                "developmentBudget": 224506,
+                "fromGeneralBudget": 426441,
+                "total": 650947
+            },
+            "total": 1541151
+        },
+        "total": 2617666
+    },
+    {
+        "fundCode": 97047,
+        "foundName": "ea fugiat",
+        "generalFund": {
+            "wages": 127039,
+            "utilities": 227541,
+            "total": 354580
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 784590,
+                "utilities": 751354,
+                "total": 1535944
+            },
+            "development": {
+                "developmentBudget": 877371,
+                "fromGeneralBudget": 657951,
+                "total": 1535322
+            },
+            "total": 3071266
+        },
+        "total": 3425846
+    },
+    {
+        "fundCode": 650333,
+        "foundName": "tempor exercitation",
+        "generalFund": {
+            "wages": 624037,
+            "utilities": 796168,
+            "total": 1420205
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 5555,
+                "utilities": 802356,
+                "total": 807911
+            },
+            "development": {
+                "developmentBudget": 256776,
+                "fromGeneralBudget": 376333,
+                "total": 633109
+            },
+            "total": 1441020
+        },
+        "total": 2861225
+    },
+    {
+        "fundCode": 620618,
+        "foundName": "nostrud aliquip",
+        "generalFund": {
+            "wages": 799047,
+            "utilities": 92629,
+            "total": 891676
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 822995,
+                "utilities": 346072,
+                "total": 1169067
+            },
+            "development": {
+                "developmentBudget": 554443,
+                "fromGeneralBudget": 56359,
+                "total": 610802
+            },
+            "total": 1779869
+        },
+        "total": 2671545
+    },
+    {
+        "fundCode": 167443,
+        "foundName": "excepteur culpa",
+        "generalFund": {
+            "wages": 36046,
+            "utilities": 615879,
+            "total": 651925
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 131085,
+                "utilities": 508034,
+                "total": 639119
+            },
+            "development": {
+                "developmentBudget": 514243,
+                "fromGeneralBudget": 895839,
+                "total": 1410082
+            },
+            "total": 2049201
+        },
+        "total": 2701126
+    },
+    {
+        "fundCode": 357178,
+        "foundName": "ullamco magna",
+        "generalFund": {
+            "wages": 180521,
+            "utilities": 285835,
+            "total": 466356
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 195099,
+                "utilities": 54188,
+                "total": 249287
+            },
+            "development": {
+                "developmentBudget": 18491,
+                "fromGeneralBudget": 282326,
+                "total": 300817
+            },
+            "total": 550104
+        },
+        "total": 1016460
+    },
+    {
+        "fundCode": 59843,
+        "foundName": "ullamco proident",
+        "generalFund": {
+            "wages": 804753,
+            "utilities": 269364,
+            "total": 1074117
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 90323,
+                "utilities": 817143,
+                "total": 907466
+            },
+            "development": {
+                "developmentBudget": 544372,
+                "fromGeneralBudget": 496652,
+                "total": 1041024
+            },
+            "total": 1948490
+        },
+        "total": 3022607
+    },
+    {
+        "fundCode": 749951,
+        "foundName": "excepteur ad",
+        "generalFund": {
+            "wages": 366034,
+            "utilities": 443966,
+            "total": 810000
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 837814,
+                "utilities": 309880,
+                "total": 1147694
+            },
+            "development": {
+                "developmentBudget": 576878,
+                "fromGeneralBudget": 333678,
+                "total": 910556
+            },
+            "total": 2058250
+        },
+        "total": 2868250
+    },
+    {
+        "fundCode": 685682,
+        "foundName": "id in",
+        "generalFund": {
+            "wages": 768274,
+            "utilities": 346796,
+            "total": 1115070
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 88143,
+                "utilities": 539037,
+                "total": 627180
+            },
+            "development": {
+                "developmentBudget": 128113,
+                "fromGeneralBudget": 32312,
+                "total": 160425
+            },
+            "total": 787605
+        },
+        "total": 1902675
+    },
+    {
+        "fundCode": 750055,
+        "foundName": "ipsum reprehenderit",
+        "generalFund": {
+            "wages": 795458,
+            "utilities": 493123,
+            "total": 1288581
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 228001,
+                "utilities": 167737,
+                "total": 395738
+            },
+            "development": {
+                "developmentBudget": 562661,
+                "fromGeneralBudget": 669619,
+                "total": 1232280
+            },
+            "total": 1628018
+        },
+        "total": 2916599
+    },
+    {
+        "fundCode": 562822,
+        "foundName": "dolor deserunt",
+        "generalFund": {
+            "wages": 58359,
+            "utilities": 705393,
+            "total": 763752
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 724731,
+                "utilities": 530733,
+                "total": 1255464
+            },
+            "development": {
+                "developmentBudget": 586024,
+                "fromGeneralBudget": 122272,
+                "total": 708296
+            },
+            "total": 1963760
+        },
+        "total": 2727512
+    },
+    {
+        "fundCode": 495278,
+        "foundName": "qui aute",
+        "generalFund": {
+            "wages": 715929,
+            "utilities": 605420,
+            "total": 1321349
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 154201,
+                "utilities": 739606,
+                "total": 893807
+            },
+            "development": {
+                "developmentBudget": 346655,
+                "fromGeneralBudget": 270740,
+                "total": 617395
+            },
+            "total": 1511202
+        },
+        "total": 2832551
+    },
+    {
+        "fundCode": 756746,
+        "foundName": "et ex",
+        "generalFund": {
+            "wages": 746437,
+            "utilities": 29132,
+            "total": 775569
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 554985,
+                "utilities": 754702,
+                "total": 1309687
+            },
+            "development": {
+                "developmentBudget": 843072,
+                "fromGeneralBudget": 207105,
+                "total": 1050177
+            },
+            "total": 2359864
+        },
+        "total": 3135433
+    },
+    {
+        "fundCode": 832399,
+        "foundName": "eu consequat",
+        "generalFund": {
+            "wages": 245765,
+            "utilities": 789139,
+            "total": 1034904
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 118051,
+                "utilities": 12883,
+                "total": 130934
+            },
+            "development": {
+                "developmentBudget": 516017,
+                "fromGeneralBudget": 729223,
+                "total": 1245240
+            },
+            "total": 1376174
+        },
+        "total": 2411078
+    },
+    {
+        "fundCode": 635785,
+        "foundName": "minim nostrud",
+        "generalFund": {
+            "wages": 172611,
+            "utilities": 661681,
+            "total": 834292
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 309902,
+                "utilities": 129651,
+                "total": 439553
+            },
+            "development": {
+                "developmentBudget": 173863,
+                "fromGeneralBudget": 855125,
+                "total": 1028988
+            },
+            "total": 1468541
+        },
+        "total": 2302833
+    },
+    {
+        "fundCode": 771759,
+        "foundName": "elit cillum",
+        "generalFund": {
+            "wages": 465034,
+            "utilities": 511003,
+            "total": 976037
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 161659,
+                "utilities": 174498,
+                "total": 336157
+            },
+            "development": {
+                "developmentBudget": 707361,
+                "fromGeneralBudget": 641752,
+                "total": 1349113
+            },
+            "total": 1685270
+        },
+        "total": 2661307
+    },
+    {
+        "fundCode": 591987,
+        "foundName": "exercitation in",
+        "generalFund": {
+            "wages": 123804,
+            "utilities": 666094,
+            "total": 789898
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 748502,
+                "utilities": 199448,
+                "total": 947950
+            },
+            "development": {
+                "developmentBudget": 531633,
+                "fromGeneralBudget": 801690,
+                "total": 1333323
+            },
+            "total": 2281273
+        },
+        "total": 3071171
+    },
+    {
+        "fundCode": 58267,
+        "foundName": "adipisicing ut",
+        "generalFund": {
+            "wages": 825343,
+            "utilities": 267620,
+            "total": 1092963
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 626506,
+                "utilities": 24356,
+                "total": 650862
+            },
+            "development": {
+                "developmentBudget": 493917,
+                "fromGeneralBudget": 816661,
+                "total": 1310578
+            },
+            "total": 1961440
+        },
+        "total": 3054403
+    },
+    {
+        "fundCode": 873948,
+        "foundName": "aliqua est",
+        "generalFund": {
+            "wages": 708931,
+            "utilities": 495179,
+            "total": 1204110
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 694150,
+                "utilities": 525465,
+                "total": 1219615
+            },
+            "development": {
+                "developmentBudget": 766909,
+                "fromGeneralBudget": 721813,
+                "total": 1488722
+            },
+            "total": 2708337
+        },
+        "total": 3912447
+    },
+    {
+        "fundCode": 197349,
+        "foundName": "ullamco nisi",
+        "generalFund": {
+            "wages": 395908,
+            "utilities": 363258,
+            "total": 759166
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 263149,
+                "utilities": 590741,
+                "total": 853890
+            },
+            "development": {
+                "developmentBudget": 871520,
+                "fromGeneralBudget": 812101,
+                "total": 1683621
+            },
+            "total": 2537511
+        },
+        "total": 3296677
+    },
+    {
+        "fundCode": 466663,
+        "foundName": "velit cillum",
+        "generalFund": {
+            "wages": 722122,
+            "utilities": 387420,
+            "total": 1109542
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 111084,
+                "utilities": 222618,
+                "total": 333702
+            },
+            "development": {
+                "developmentBudget": 692154,
+                "fromGeneralBudget": 62954,
+                "total": 755108
+            },
+            "total": 1088810
+        },
+        "total": 2198352
+    },
+    {
+        "fundCode": 308683,
+        "foundName": "commodo eu",
+        "generalFund": {
+            "wages": 649499,
+            "utilities": 80863,
+            "total": 730362
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 824462,
+                "utilities": 193525,
+                "total": 1017987
+            },
+            "development": {
+                "developmentBudget": 397045,
+                "fromGeneralBudget": 122727,
+                "total": 519772
+            },
+            "total": 1537759
+        },
+        "total": 2268121
+    },
+    {
+        "fundCode": 623659,
+        "foundName": "dolore velit",
+        "generalFund": {
+            "wages": 726572,
+            "utilities": 822,
+            "total": 727394
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 608147,
+                "utilities": 141228,
+                "total": 749375
+            },
+            "development": {
+                "developmentBudget": 300671,
+                "fromGeneralBudget": 551865,
+                "total": 852536
+            },
+            "total": 1601911
+        },
+        "total": 2329305
+    },
+    {
+        "fundCode": 566701,
+        "foundName": "quis velit",
+        "generalFund": {
+            "wages": 35712,
+            "utilities": 189113,
+            "total": 224825
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 373967,
+                "utilities": 639817,
+                "total": 1013784
+            },
+            "development": {
+                "developmentBudget": 467228,
+                "fromGeneralBudget": 308993,
+                "total": 776221
+            },
+            "total": 1790005
+        },
+        "total": 2014830
+    },
+    {
+        "fundCode": 613295,
+        "foundName": "qui ipsum",
+        "generalFund": {
+            "wages": 592821,
+            "utilities": 124087,
+            "total": 716908
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 321455,
+                "utilities": 421530,
+                "total": 742985
+            },
+            "development": {
+                "developmentBudget": 287023,
+                "fromGeneralBudget": 494193,
+                "total": 781216
+            },
+            "total": 1524201
+        },
+        "total": 2241109
+    },
+    {
+        "fundCode": 759669,
+        "foundName": "reprehenderit ex",
+        "generalFund": {
+            "wages": 830906,
+            "utilities": 70998,
+            "total": 901904
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 448123,
+                "utilities": 290820,
+                "total": 738943
+            },
+            "development": {
+                "developmentBudget": 461459,
+                "fromGeneralBudget": 116272,
+                "total": 577731
+            },
+            "total": 1316674
+        },
+        "total": 2218578
+    },
+    {
+        "fundCode": 599135,
+        "foundName": "duis quis",
+        "generalFund": {
+            "wages": 795630,
+            "utilities": 155006,
+            "total": 950636
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 298183,
+                "utilities": 135303,
+                "total": 433486
+            },
+            "development": {
+                "developmentBudget": 58486,
+                "fromGeneralBudget": 246497,
+                "total": 304983
+            },
+            "total": 738469
+        },
+        "total": 1689105
+    },
+    {
+        "fundCode": 564709,
+        "foundName": "eiusmod occaecat",
+        "generalFund": {
+            "wages": 754757,
+            "utilities": 81728,
+            "total": 836485
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 463116,
+                "utilities": 721891,
+                "total": 1185007
+            },
+            "development": {
+                "developmentBudget": 718292,
+                "fromGeneralBudget": 743777,
+                "total": 1462069
+            },
+            "total": 2647076
+        },
+        "total": 3483561
+    },
+    {
+        "fundCode": 290140,
+        "foundName": "ut excepteur",
+        "generalFund": {
+            "wages": 327426,
+            "utilities": 757871,
+            "total": 1085297
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 247106,
+                "utilities": 101140,
+                "total": 348246
+            },
+            "development": {
+                "developmentBudget": 301868,
+                "fromGeneralBudget": 772592,
+                "total": 1074460
+            },
+            "total": 1422706
+        },
+        "total": 2508003
+    },
+    {
+        "fundCode": 149233,
+        "foundName": "ut excepteur",
+        "generalFund": {
+            "wages": 492978,
+            "utilities": 56912,
+            "total": 549890
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 538903,
+                "utilities": 309985,
+                "total": 848888
+            },
+            "development": {
+                "developmentBudget": 701056,
+                "fromGeneralBudget": 697388,
+                "total": 1398444
+            },
+            "total": 2247332
+        },
+        "total": 2797222
+    },
+    {
+        "fundCode": 405053,
+        "foundName": "cillum reprehenderit",
+        "generalFund": {
+            "wages": 217039,
+            "utilities": 691194,
+            "total": 908233
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 495511,
+                "utilities": 411806,
+                "total": 907317
+            },
+            "development": {
+                "developmentBudget": 868997,
+                "fromGeneralBudget": 488976,
+                "total": 1357973
+            },
+            "total": 2265290
+        },
+        "total": 3173523
+    },
+    {
+        "fundCode": 64178,
+        "foundName": "anim et",
+        "generalFund": {
+            "wages": 895369,
+            "utilities": 779673,
+            "total": 1675042
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 200507,
+                "utilities": 62825,
+                "total": 263332
+            },
+            "development": {
+                "developmentBudget": 362189,
+                "fromGeneralBudget": 396828,
+                "total": 759017
+            },
+            "total": 1022349
+        },
+        "total": 2697391
+    },
+    {
+        "fundCode": 5627,
+        "foundName": "consequat elit",
+        "generalFund": {
+            "wages": 758311,
+            "utilities": 166947,
+            "total": 925258
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 555911,
+                "utilities": 757139,
+                "total": 1313050
+            },
+            "development": {
+                "developmentBudget": 510915,
+                "fromGeneralBudget": 286519,
+                "total": 797434
+            },
+            "total": 2110484
+        },
+        "total": 3035742
+    },
+    {
+        "fundCode": 234295,
+        "foundName": "quis dolore",
+        "generalFund": {
+            "wages": 181009,
+            "utilities": 874534,
+            "total": 1055543
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 754036,
+                "utilities": 586975,
+                "total": 1341011
+            },
+            "development": {
+                "developmentBudget": 650438,
+                "fromGeneralBudget": 104376,
+                "total": 754814
+            },
+            "total": 2095825
+        },
+        "total": 3151368
+    },
+    {
+        "fundCode": 236518,
+        "foundName": "ut proident",
+        "generalFund": {
+            "wages": 423774,
+            "utilities": 150236,
+            "total": 574010
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 166877,
+                "utilities": 31661,
+                "total": 198538
+            },
+            "development": {
+                "developmentBudget": 666621,
+                "fromGeneralBudget": 358589,
+                "total": 1025210
+            },
+            "total": 1223748
+        },
+        "total": 1797758
+    },
+    {
+        "fundCode": 518527,
+        "foundName": "mollit enim",
+        "generalFund": {
+            "wages": 149912,
+            "utilities": 666062,
+            "total": 815974
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 253900,
+                "utilities": 91569,
+                "total": 345469
+            },
+            "development": {
+                "developmentBudget": 897566,
+                "fromGeneralBudget": 357935,
+                "total": 1255501
+            },
+            "total": 1600970
+        },
+        "total": 2416944
+    },
+    {
+        "fundCode": 488667,
+        "foundName": "in cupidatat",
+        "generalFund": {
+            "wages": 672648,
+            "utilities": 765524,
+            "total": 1438172
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 617748,
+                "utilities": 513460,
+                "total": 1131208
+            },
+            "development": {
+                "developmentBudget": 122760,
+                "fromGeneralBudget": 508943,
+                "total": 631703
+            },
+            "total": 1762911
+        },
+        "total": 3201083
+    },
+    {
+        "fundCode": 225001,
+        "foundName": "eu eu",
+        "generalFund": {
+            "wages": 337694,
+            "utilities": 352709,
+            "total": 690403
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 123867,
+                "utilities": 739444,
+                "total": 863311
+            },
+            "development": {
+                "developmentBudget": 26897,
+                "fromGeneralBudget": 149573,
+                "total": 176470
+            },
+            "total": 1039781
+        },
+        "total": 1730184
+    },
+    {
+        "fundCode": 611031,
+        "foundName": "occaecat incididunt",
+        "generalFund": {
+            "wages": 392269,
+            "utilities": 421830,
+            "total": 814099
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 427479,
+                "utilities": 323607,
+                "total": 751086
+            },
+            "development": {
+                "developmentBudget": 303930,
+                "fromGeneralBudget": 675847,
+                "total": 979777
+            },
+            "total": 1730863
+        },
+        "total": 2544962
+    },
+    {
+        "fundCode": 767168,
+        "foundName": "consectetur id",
+        "generalFund": {
+            "wages": 90423,
+            "utilities": 820452,
+            "total": 910875
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 721292,
+                "utilities": 576496,
+                "total": 1297788
+            },
+            "development": {
+                "developmentBudget": 872965,
+                "fromGeneralBudget": 156988,
+                "total": 1029953
+            },
+            "total": 2327741
+        },
+        "total": 3238616
+    },
+    {
+        "fundCode": 455327,
+        "foundName": "exercitation do",
+        "generalFund": {
+            "wages": 800038,
+            "utilities": 203406,
+            "total": 1003444
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 817146,
+                "utilities": 575896,
+                "total": 1393042
+            },
+            "development": {
+                "developmentBudget": 658269,
+                "fromGeneralBudget": 37921,
+                "total": 696190
+            },
+            "total": 2089232
+        },
+        "total": 3092676
+    },
+    {
+        "fundCode": 32935,
+        "foundName": "magna Lorem",
+        "generalFund": {
+            "wages": 477422,
+            "utilities": 186232,
+            "total": 663654
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 250358,
+                "utilities": 14875,
+                "total": 265233
+            },
+            "development": {
+                "developmentBudget": 39423,
+                "fromGeneralBudget": 206170,
+                "total": 245593
+            },
+            "total": 510826
+        },
+        "total": 1174480
+    },
+    {
+        "fundCode": 644298,
+        "foundName": "esse incididunt",
+        "generalFund": {
+            "wages": 8087,
+            "utilities": 85026,
+            "total": 93113
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 180886,
+                "utilities": 373774,
+                "total": 554660
+            },
+            "development": {
+                "developmentBudget": 724345,
+                "fromGeneralBudget": 611904,
+                "total": 1336249
+            },
+            "total": 1890909
+        },
+        "total": 1984022
+    },
+    {
+        "fundCode": 700919,
+        "foundName": "amet consectetur",
+        "generalFund": {
+            "wages": 98312,
+            "utilities": 778599,
+            "total": 876911
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 853890,
+                "utilities": 855629,
+                "total": 1709519
+            },
+            "development": {
+                "developmentBudget": 346199,
+                "fromGeneralBudget": 122022,
+                "total": 468221
+            },
+            "total": 2177740
+        },
+        "total": 3054651
+    },
+    {
+        "fundCode": 411473,
+        "foundName": "consectetur exercitation",
+        "generalFund": {
+            "wages": 303681,
+            "utilities": 685045,
+            "total": 988726
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 597890,
+                "utilities": 78727,
+                "total": 676617
+            },
+            "development": {
+                "developmentBudget": 363204,
+                "fromGeneralBudget": 70940,
+                "total": 434144
+            },
+            "total": 1110761
+        },
+        "total": 2099487
+    },
+    {
+        "fundCode": 213946,
+        "foundName": "qui fugiat",
+        "generalFund": {
+            "wages": 635942,
+            "utilities": 565820,
+            "total": 1201762
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 16712,
+                "utilities": 202593,
+                "total": 219305
+            },
+            "development": {
+                "developmentBudget": 193193,
+                "fromGeneralBudget": 250106,
+                "total": 443299
+            },
+            "total": 662604
+        },
+        "total": 1864366
+    },
+    {
+        "fundCode": 899874,
+        "foundName": "duis est",
+        "generalFund": {
+            "wages": 371100,
+            "utilities": 436917,
+            "total": 808017
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 806258,
+                "utilities": 544425,
+                "total": 1350683
+            },
+            "development": {
+                "developmentBudget": 597387,
+                "fromGeneralBudget": 5623,
+                "total": 603010
+            },
+            "total": 1953693
+        },
+        "total": 2761710
+    },
+    {
+        "fundCode": 201635,
+        "foundName": "nisi consequat",
+        "generalFund": {
+            "wages": 555180,
+            "utilities": 700957,
+            "total": 1256137
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 809166,
+                "utilities": 717631,
+                "total": 1526797
+            },
+            "development": {
+                "developmentBudget": 422922,
+                "fromGeneralBudget": 793518,
+                "total": 1216440
+            },
+            "total": 2743237
+        },
+        "total": 3999374
+    },
+    {
+        "fundCode": 117775,
+        "foundName": "excepteur ex",
+        "generalFund": {
+            "wages": 435924,
+            "utilities": 741260,
+            "total": 1177184
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 838186,
+                "utilities": 868186,
+                "total": 1706372
+            },
+            "development": {
+                "developmentBudget": 202319,
+                "fromGeneralBudget": 811769,
+                "total": 1014088
+            },
+            "total": 2720460
+        },
+        "total": 3897644
+    },
+    {
+        "fundCode": 557481,
+        "foundName": "quis adipisicing",
+        "generalFund": {
+            "wages": 694127,
+            "utilities": 793403,
+            "total": 1487530
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 634919,
+                "utilities": 98074,
+                "total": 732993
+            },
+            "development": {
+                "developmentBudget": 250062,
+                "fromGeneralBudget": 769591,
+                "total": 1019653
+            },
+            "total": 1752646
+        },
+        "total": 3240176
+    },
+    {
+        "fundCode": 78605,
+        "foundName": "ut incididunt",
+        "generalFund": {
+            "wages": 543124,
+            "utilities": 315679,
+            "total": 858803
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 442949,
+                "utilities": 254110,
+                "total": 697059
+            },
+            "development": {
+                "developmentBudget": 193477,
+                "fromGeneralBudget": 134250,
+                "total": 327727
+            },
+            "total": 1024786
+        },
+        "total": 1883589
+    },
+    {
+        "fundCode": 506793,
+        "foundName": "fugiat id",
+        "generalFund": {
+            "wages": 306297,
+            "utilities": 672149,
+            "total": 978446
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 764576,
+                "utilities": 402650,
+                "total": 1167226
+            },
+            "development": {
+                "developmentBudget": 317003,
+                "fromGeneralBudget": 194161,
+                "total": 511164
+            },
+            "total": 1678390
+        },
+        "total": 2656836
+    },
+    {
+        "fundCode": 98863,
+        "foundName": "aliqua nostrud",
+        "generalFund": {
+            "wages": 448858,
+            "utilities": 249423,
+            "total": 698281
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 124085,
+                "utilities": 225708,
+                "total": 349793
+            },
+            "development": {
+                "developmentBudget": 457609,
+                "fromGeneralBudget": 34498,
+                "total": 492107
+            },
+            "total": 841900
+        },
+        "total": 1540181
+    },
+    {
+        "fundCode": 492571,
+        "foundName": "laboris fugiat",
+        "generalFund": {
+            "wages": 858137,
+            "utilities": 899689,
+            "total": 1757826
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 767612,
+                "utilities": 124160,
+                "total": 891772
+            },
+            "development": {
+                "developmentBudget": 75839,
+                "fromGeneralBudget": 633410,
+                "total": 709249
+            },
+            "total": 1601021
+        },
+        "total": 3358847
+    },
+    {
+        "fundCode": 194443,
+        "foundName": "pariatur consequat",
+        "generalFund": {
+            "wages": 59131,
+            "utilities": 344154,
+            "total": 403285
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 309652,
+                "utilities": 24158,
+                "total": 333810
+            },
+            "development": {
+                "developmentBudget": 492383,
+                "fromGeneralBudget": 862106,
+                "total": 1354489
+            },
+            "total": 1688299
+        },
+        "total": 2091584
+    },
+    {
+        "fundCode": 538831,
+        "foundName": "cupidatat dolor",
+        "generalFund": {
+            "wages": 24184,
+            "utilities": 70664,
+            "total": 94848
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 500594,
+                "utilities": 638064,
+                "total": 1138658
+            },
+            "development": {
+                "developmentBudget": 782029,
+                "fromGeneralBudget": 739753,
+                "total": 1521782
+            },
+            "total": 2660440
+        },
+        "total": 2755288
+    },
+    {
+        "fundCode": 582063,
+        "foundName": "sunt pariatur",
+        "generalFund": {
+            "wages": 412067,
+            "utilities": 294300,
+            "total": 706367
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 290534,
+                "utilities": 799746,
+                "total": 1090280
+            },
+            "development": {
+                "developmentBudget": 357351,
+                "fromGeneralBudget": 470912,
+                "total": 828263
+            },
+            "total": 1918543
+        },
+        "total": 2624910
+    },
+    {
+        "fundCode": 882555,
+        "foundName": "officia laboris",
+        "generalFund": {
+            "wages": 404474,
+            "utilities": 77215,
+            "total": 481689
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 605704,
+                "utilities": 745881,
+                "total": 1351585
+            },
+            "development": {
+                "developmentBudget": 852794,
+                "fromGeneralBudget": 571201,
+                "total": 1423995
+            },
+            "total": 2775580
+        },
+        "total": 3257269
+    },
+    {
+        "fundCode": 346226,
+        "foundName": "laborum consectetur",
+        "generalFund": {
+            "wages": 106983,
+            "utilities": 70659,
+            "total": 177642
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 523682,
+                "utilities": 370667,
+                "total": 894349
+            },
+            "development": {
+                "developmentBudget": 807152,
+                "fromGeneralBudget": 888084,
+                "total": 1695236
+            },
+            "total": 2589585
+        },
+        "total": 2767227
+    },
+    {
+        "fundCode": 207852,
+        "foundName": "dolore eu",
+        "generalFund": {
+            "wages": 95743,
+            "utilities": 716801,
+            "total": 812544
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 216576,
+                "utilities": 246798,
+                "total": 463374
+            },
+            "development": {
+                "developmentBudget": 729499,
+                "fromGeneralBudget": 179552,
+                "total": 909051
+            },
+            "total": 1372425
+        },
+        "total": 2184969
+    },
+    {
+        "fundCode": 512145,
+        "foundName": "do quis",
+        "generalFund": {
+            "wages": 273602,
+            "utilities": 216786,
+            "total": 490388
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 287354,
+                "utilities": 159701,
+                "total": 447055
+            },
+            "development": {
+                "developmentBudget": 478443,
+                "fromGeneralBudget": 894306,
+                "total": 1372749
+            },
+            "total": 1819804
+        },
+        "total": 2310192
+    },
+    {
+        "fundCode": 392689,
+        "foundName": "velit cupidatat",
+        "generalFund": {
+            "wages": 317232,
+            "utilities": 798029,
+            "total": 1115261
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 497117,
+                "utilities": 101738,
+                "total": 598855
+            },
+            "development": {
+                "developmentBudget": 612999,
+                "fromGeneralBudget": 802642,
+                "total": 1415641
+            },
+            "total": 2014496
+        },
+        "total": 3129757
+    },
+    {
+        "fundCode": 295910,
+        "foundName": "amet tempor",
+        "generalFund": {
+            "wages": 613094,
+            "utilities": 58816,
+            "total": 671910
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 102323,
+                "utilities": 230329,
+                "total": 332652
+            },
+            "development": {
+                "developmentBudget": 418813,
+                "fromGeneralBudget": 326148,
+                "total": 744961
+            },
+            "total": 1077613
+        },
+        "total": 1749523
+    },
+    {
+        "fundCode": 825682,
+        "foundName": "aute est",
+        "generalFund": {
+            "wages": 574978,
+            "utilities": 812520,
+            "total": 1387498
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 712225,
+                "utilities": 552923,
+                "total": 1265148
+            },
+            "development": {
+                "developmentBudget": 203944,
+                "fromGeneralBudget": 634966,
+                "total": 838910
+            },
+            "total": 2104058
+        },
+        "total": 3491556
+    },
+    {
+        "fundCode": 686544,
+        "foundName": "consectetur qui",
+        "generalFund": {
+            "wages": 262930,
+            "utilities": 530412,
+            "total": 793342
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 85608,
+                "utilities": 66063,
+                "total": 151671
+            },
+            "development": {
+                "developmentBudget": 152337,
+                "fromGeneralBudget": 661177,
+                "total": 813514
+            },
+            "total": 965185
+        },
+        "total": 1758527
+    },
+    {
+        "fundCode": 19409,
+        "foundName": "culpa quis",
+        "generalFund": {
+            "wages": 509513,
+            "utilities": 786452,
+            "total": 1295965
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 507073,
+                "utilities": 231076,
+                "total": 738149
+            },
+            "development": {
+                "developmentBudget": 582521,
+                "fromGeneralBudget": 848647,
+                "total": 1431168
+            },
+            "total": 2169317
+        },
+        "total": 3465282
+    },
+    {
+        "fundCode": 341326,
+        "foundName": "consectetur do",
+        "generalFund": {
+            "wages": 408641,
+            "utilities": 672346,
+            "total": 1080987
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 706291,
+                "utilities": 107127,
+                "total": 813418
+            },
+            "development": {
+                "developmentBudget": 40387,
+                "fromGeneralBudget": 697787,
+                "total": 738174
+            },
+            "total": 1551592
+        },
+        "total": 2632579
+    },
+    {
+        "fundCode": 298151,
+        "foundName": "fugiat sint",
+        "generalFund": {
+            "wages": 323682,
+            "utilities": 755020,
+            "total": 1078702
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 250231,
+                "utilities": 614991,
+                "total": 865222
+            },
+            "development": {
+                "developmentBudget": 330556,
+                "fromGeneralBudget": 432600,
+                "total": 763156
+            },
+            "total": 1628378
+        },
+        "total": 2707080
+    },
+    {
+        "fundCode": 48391,
+        "foundName": "ex magna",
+        "generalFund": {
+            "wages": 240846,
+            "utilities": 820086,
+            "total": 1060932
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 287812,
+                "utilities": 508988,
+                "total": 796800
+            },
+            "development": {
+                "developmentBudget": 123854,
+                "fromGeneralBudget": 532068,
+                "total": 655922
+            },
+            "total": 1452722
+        },
+        "total": 2513654
+    },
+    {
+        "fundCode": 710743,
+        "foundName": "eu culpa",
+        "generalFund": {
+            "wages": 8131,
+            "utilities": 105369,
+            "total": 113500
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 125204,
+                "utilities": 62745,
+                "total": 187949
+            },
+            "development": {
+                "developmentBudget": 635545,
+                "fromGeneralBudget": 386713,
+                "total": 1022258
+            },
+            "total": 1210207
+        },
+        "total": 1323707
+    },
+    {
+        "fundCode": 537976,
+        "foundName": "officia dolor",
+        "generalFund": {
+            "wages": 62361,
+            "utilities": 187922,
+            "total": 250283
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 400425,
+                "utilities": 3706,
+                "total": 404131
+            },
+            "development": {
+                "developmentBudget": 114911,
+                "fromGeneralBudget": 828295,
+                "total": 943206
+            },
+            "total": 1347337
+        },
+        "total": 1597620
+    },
+    {
+        "fundCode": 15685,
+        "foundName": "mollit sunt",
+        "generalFund": {
+            "wages": 176523,
+            "utilities": 226363,
+            "total": 402886
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 817433,
+                "utilities": 452069,
+                "total": 1269502
+            },
+            "development": {
+                "developmentBudget": 519141,
+                "fromGeneralBudget": 215387,
+                "total": 734528
+            },
+            "total": 2004030
+        },
+        "total": 2406916
+    },
+    {
+        "fundCode": 210731,
+        "foundName": "enim ex",
+        "generalFund": {
+            "wages": 210917,
+            "utilities": 265515,
+            "total": 476432
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 761143,
+                "utilities": 553916,
+                "total": 1315059
+            },
+            "development": {
+                "developmentBudget": 285356,
+                "fromGeneralBudget": 767192,
+                "total": 1052548
+            },
+            "total": 2367607
+        },
+        "total": 2844039
+    },
+    {
+        "fundCode": 524635,
+        "foundName": "sint exercitation",
+        "generalFund": {
+            "wages": 667623,
+            "utilities": 782378,
+            "total": 1450001
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 721533,
+                "utilities": 582838,
+                "total": 1304371
+            },
+            "development": {
+                "developmentBudget": 457049,
+                "fromGeneralBudget": 645478,
+                "total": 1102527
+            },
+            "total": 2406898
+        },
+        "total": 3856899
+    },
+    {
+        "fundCode": 378277,
+        "foundName": "et sint",
+        "generalFund": {
+            "wages": 862828,
+            "utilities": 416038,
+            "total": 1278866
+        },
+        "specialFund": {
+            "consumption": {
+                "wages": 861386,
+                "utilities": 68583,
+                "total": 929969
+            },
+            "development": {
+                "developmentBudget": 641874,
+                "fromGeneralBudget": 872362,
+                "total": 1514236
+            },
+            "total": 2444205
+        },
+        "total": 3723071
+    }
+]
