@@ -980,7 +980,6 @@
             
             for (i = 1; i < hardTree.length; i++) {
             	currentElement = hardTree[i];
-            	//console.log(hardTree[i]);
             	if (currentElement[2] == 0) {
             		var temp = {};
             		temp.id = currentElement[0];
@@ -989,16 +988,10 @@
             		hieracy.root.children.push(temp);
         		}
             }
-            // so now we have basic children
-            // let's search their's sub-children
             for (i = 0; i < hieracy.root.children.length; i++) {
-            	// how many children has this item?
-            	var subchildren = 0;
             	hieracy.root.children[i].children = [];
             	for (j = 1; j < hardTree.length; j++) {
             		if (hardTree[j][2] == hieracy.root.children[i].id) {
-            			subchildren++;
-            			
             			var temp = {};
             			temp.id = hardTree[j][0];
             			temp.value = hardTree[j][1];
@@ -1006,22 +999,16 @@
             			hieracy.root.children[i].children.push(temp);
         			}
             	}
-            	if (subchildren != 0) {
-            		hieracy.root.children[i].childrenCount = subchildren;
-            	}
-            	
             }
-            
             for (i = 0; i < hieracy.root.children.length; i++) {
             	currentItem = hieracy.root.children[i];
         		for (k = 0; k < currentItem.children.length; k++) {
         			
-        			var subchildren = 0;
+        			//var subchildren = 0;
             		currentItem.children[k].children = [];
             		
         			for (j = 1; j < hardTree.length; j++) {
 	            		if (hardTree[j][2] == currentItem.children[k].id) {
-	            			subchildren++;
 	            			
 	            			var temp = {};
 	            			temp.id = hardTree[j][0];
@@ -1033,7 +1020,67 @@
         		}
             }
             
+            for (i = 0; i < hieracy.root.children.length; i++) {
+            	currentItem = hieracy.root.children[i];
+        		for (k = 0; k < currentItem.children.length; k++) {
+					currentItem2 = currentItem.children[k];
+        			for (m = 0; m < currentItem2.children.length; m++) {
+            			currentItem2.children[m].children = [];
+            		
+	        			for (j = 1; j < hardTree.length; j++) {
+		            		if (hardTree[j][2] == currentItem2.children[m].id) {
+		            			var temp = {};
+		            			temp.id = hardTree[j][0];
+		            			temp.value = hardTree[j][1];
+		            			
+		            			currentItem2.children[m].children.push(temp);
+		        			}
+	            		}
+	            	}
+        		}
+            }
             console.log(hieracy);
+            
+            
+            function attachProps(elem) {
+            	// do smth
+            }
+            // applying data for no-children nodes
+            function parseArray(someArray) {
+            	for (var i=0; i < someArray.length; i++) {
+            		var obj = someArray[i];
+            		
+            		if (obj.children.length > 0) {
+            			for (var j=0; j < obj.children.length; j++) {
+            				var obj2 = obj.children[j];
+            				if (obj2.children.length > 0) {
+            					for (var k=0; k < obj2.children.length; k++) {
+            						var obj3 = obj2.children[k];
+            						if (obj3.children.length > 0) {
+            							for (var m=0; m < obj3.children.length; m++) {
+            								var obj4 = obj2.children[m];
+            								if (obj4.children.length > 0) {
+            								} else {
+            									
+            								}
+            							}
+            						} else {
+            							
+            						}
+            					}
+            				} else {
+            					
+            				}
+            			}
+            		} else {
+            			
+            		}
+            	}	
+            } 
+            
+            parseArray(hieracy.root.children);
+            
+            //hieracy.root.children
             
             //console.log(dataObj);
             
