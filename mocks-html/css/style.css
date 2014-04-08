@@ -201,9 +201,8 @@ footer a:hover {
 	color: #eeeeff;
 }
 
-.main-content {
+/*.main-content {
 	display: table !important;
-	/*width: 100%;*/
 	-moz-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -216,7 +215,7 @@ footer a:hover {
 .main-content .row .col-md-9 {
 	display:table-cell;
 	float: none; 
-}
+}*/
 
 .main-content .row .col-md-2 {
 	background-color: #D9E8F7;
@@ -230,9 +229,6 @@ footer a:hover {
 .document-header {
 	border-bottom: 2px solid #336699; 
 }
-.main-content {
-	margin-left: 50px;
-}
 
 .table-wrapper table tr:nth-child(n+3) td:nth-child(n+3) {
 	text-align: right !important;
@@ -240,4 +236,18 @@ footer a:hover {
 
 .addon1 {
 	margin-bottom:1em;
+}
+
+.node {
+  border: solid 1px white;
+  font: 10px sans-serif;
+  line-height: 12px;
+  overflow: hidden;
+  position: absolute;
+  text-indent: 2px;
+}
+
+#canvas {
+	font-size:11px;
+	color: white;
 }
