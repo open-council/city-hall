@@ -2,26 +2,26 @@ Use this template to generate JSON for Budget Expenditures Table at http://www.j
 [
     '{{repeat(100)}}',
     {
-        fundCode: '{{numeric(000000, 900000)}}',
-        foundName: '{{lorem(2, "words")}}',
+        fundCode: '{{integer (000000, 900000)}}',
+        foundName: '{{lorem(8, "words")}}',
         generalFund: {
-            wages: '{{numeric(000000, 900000)}}',
-            utilities: '{{numeric(000000, 900000)}}',
+            wages: '{{integer (000000, 900000)}}',
+            utilities: '{{integer (000000, 900000)}}',
             total: function() {
                 return this.wages + this.utilities;
             }
         },
         specialFund: {
             consumption: {
-                wages: '{{numeric(000000, 900000)}}',
-                utilities: '{{numeric(000000, 900000)}}',
+                wages: '{{integer (000000, 900000)}}',
+                utilities: '{{integer (000000, 900000)}}',
                 total: function() {
                     return this.wages + this.utilities;
                 }
             },
             development: {
-                developmentBudget: '{{numeric(000000, 900000)}}',
-                fromGeneralBudget: '{{numeric(000000, 900000)}}',
+                developmentBudget: '{{integer (000000, 900000)}}',
+                fromGeneralBudget: '{{integer (000000, 900000)}}',
                 total: function() {
                     return this.developmentBudget + this.fromGeneralBudget;
                 }

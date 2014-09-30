@@ -32,9 +32,9 @@
                 },
                 "specialFund": {
                     "consumption": {
-                        "wages": 0,
-                        "utilities": 0,
-                        "total": 0
+                        "wages": 1111,
+                        "utilities": 1111,
+                        "total": 2222
                     },
                     "development": {
                         "developmentBudget": 311100,

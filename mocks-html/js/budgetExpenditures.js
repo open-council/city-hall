@@ -108,7 +108,41 @@ var BudgetExpenditures = (function () {
                 'rowCallback': function (row, data) {
                     if (!data.hasOwnProperty('items') || data['items'].length === 0) {
                         $(row).find('td:first').empty();
-                    }
+                    };
+
+                    var columns = $(row).find('td');
+                    $(columns[3]).attr({
+                        'title': 'З них:',
+                        'data-container': 'body',
+                        'data-toggle': 'popover',
+                        'data-trigger': 'hover',
+                        'data-html': 'true',
+                        'data-placement': 'top',
+                        'data-content': _generateTooltip(data['generalFund'])
+                    });
+
+                    $(columns[5]).attr({
+                        'title': 'З них:',
+                        'data-container': 'body',
+                        'data-toggle': 'popover',
+                        'data-trigger': 'hover',
+                        'data-html': 'true',
+                        'data-placement': 'top',
+                        'data-content': _generateTooltip(data['specialFund']['consumption'])
+                    });
+
+                    $(columns[6]).attr({
+                        'title': 'З них:',
+                        'data-container': 'body',
+                        'data-toggle': 'popover',
+                        'data-trigger': 'hover',
+                        'data-html': 'true',
+                        'data-placement': 'top',
+                        'data-content': _generateTooltip2(data['specialFund']['development'])
+                    });
+
+                    columns.popover();
+                    console.log(data);
                 }
             });
 //            console.log(budgetExpendituresTable.tables());
@@ -135,7 +169,6 @@ var BudgetExpenditures = (function () {
                 } else {
                     // Open this row
                     $(this).find('span').toggleClass('glyphicon-plus-sign glyphicon-minus-sign');
-                    var newRow = _formatRowDetails(row.data(), tr);
                     row.child( _formatRowDetails(row.data(), tr) ).show();
                     row.child().find('td:first').closest('td').css({
                         'paddingLeft': tr.find('td:first').outerWidth(),
@@ -143,8 +176,7 @@ var BudgetExpenditures = (function () {
                         'paddingRight': '0'
                     });
                     tr.addClass('shown');
-//                    console.log($(newRow));
-//                    $(newRow).tooltip();
+                    row.child().find('td').popover();
                 }
             });
         }
@@ -162,18 +194,26 @@ var BudgetExpenditures = (function () {
             if (rowData.hasOwnProperty('items') || rowData['items'].length >= 0) {
                 innerTable += '<table class="table table-bordered table-hover table-condensed inner-table" style="width: ' + (row.outerWidth(true) - row.find('td:first').outerWidth(true)) + 'px;"><tbody>';
                 $.each(rowData.items, function (index, element) {
-                    innerTable += '<tr data-toggle="tooltip" title="Some tooltip text!" data-trigger="hover">' +
+                    innerTable += '<tr>' +
                         '<td style="width: ' + $(columns[1]).width() + 'px;">' + element['fundCode'] + '</td>' +
                         '<td style="width: ' + $(columns[2]).width() + 'px;">' + element['foundName'] + '</td>' +
-                        '<td style="width: ' + $(columns[3]).width() + 'px;">' + element['generalFund']['total'] + '</td>' +
+                        '<td data-container="body" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="top" style="width: ' + $(columns[3]).width() + 'px;" title="З них:" data-content="' + _generateTooltip(element['generalFund']) + '">' + element['generalFund']['total'] + '</td>' +
                         '<td style="width: ' + $(columns[4]).width() + 'px;">' + element['specialFund']['total'] + '</td>' +
-                        '<td style="width: ' + $(columns[5]).width() + 'px;">' + element['specialFund']['consumption']['total'] + '</td>' +
-                        '<td style="width: ' + $(columns[6]).width() + 'px;">' + element['specialFund']['development']['total'] + '</td>' +
+                        '<td data-container="body" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="top" style="width: ' + $(columns[5]).width() + 'px;" title="З них:" data-content="' + _generateTooltip(element['specialFund']['consumption']) + '">' + element['specialFund']['consumption']['total'] + '</td>' +
+                        '<td data-container="body" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="top" style="width: ' + $(columns[6]).width() + 'px;"  title="З них:" data-content="' + _generateTooltip2(element['specialFund']['development']) + '">' + element['specialFund']['development']['total'] + '</td>' +
                         '<td style="width: ' + $(columns[7]).width() + 'px;">' + element['total'] + '</td>';
                 });
                 innerTable += '</tbody>';
             }
             return innerTable;
+        }
+
+        function _generateTooltip(data) {
+            return '<p><strong>Оплата праці: </strong>' + data['wages'] + '</p><p><strong>Комунальні послуги та енергоносії: </strong>' + data['utilities'] + '</p>';
+        }
+
+        function _generateTooltip2(data) {
+            return '<p><strong>Бюджет розвитку: </strong>' + data['developmentBudget'] + '</p><p><strong>Спеціального фонду: </strong>' + data['fromGeneralBudget'] + '</p>';
         }
 
         /**
