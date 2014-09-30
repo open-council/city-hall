@@ -13,21 +13,11 @@ var BudgetExpenditures = (function () {
      * @type {Array}
      * @private
      */
-    var _budgetExpendituresData = [];
-
-    /**
-     * Contain list of funds with name and it's code
-     *
-     * @type {Array}
-     * @private
-     */
-    var _fundsList = [];
 
     function init() {
         // Private methods and variables
         function _init() {
-            _getFundsList();
-            _getBudgetExpendituresData();
+            _renderBudgetExpendituresTable();
             _addListeners();
         };
 
@@ -55,150 +45,135 @@ var BudgetExpenditures = (function () {
             })
         };
 
-        function _getFundsList() {
-            $.ajax({
-                url: 'data/funds.json',
-                type: 'get',
-                dataType: 'json',
-                error: function(data){
-                },
-                success: function(data){
-                    _fundsList = data;
-                    console.log(data);
-                }
-            });
-
-        }
-
-        function _getBudgetExpendituresData() {
-            $.ajax({
-                url: 'data/budgetExpenditures.json',
-                type: 'get',
-                dataType: 'json',
-                error: function(data){
-                },
-                success: function(data){
-                    _budgetExpendituresData = data;
-                    _renderBudgetExpendituresTable();
-                    _renderBudgetExpendituresChart();
-                }
-            });
-        };
-
         /**
          * Applying JQuery dataTables plugin for budget expenditures table.
          *
          * @private
          */
         function _renderBudgetExpendituresTable() {
-            var table = $('#budgetExpenditures');
-            table.find('tbody').html(_generateBudgetExpendituresTable());
-            var budgetExpendituresTable = table.dataTable({
-                "oLanguage": {
-                    "sUrl": "js/plugins/jqueryDataTables/localization/ukrainian.txt"
+            var budgetExpendituresTable = $('#budgetExpenditures').DataTable({
+                'ajax': {
+                    'url': 'data/budgetExpenditures.json',
+                    "dataSrc": ""
                 },
-                "sDom": "<'row'<'col-lg-6'l><'col-lg-6'f>r>t<'row'<'col-lg-6'i><'col-lg-6'p>>",
-                'fnDrawCallback': function() {
-                    $('.dataTables_filter').find('input').addClass('form-control input-sm search-input');
-                    $('.dataTables_length').find('select').addClass('form-control input-sm');
-                    $('.dataTables_paginate').find('ul').css('margin-right', '8px');
-                    _initializeEditableCells(budgetExpendituresTable);
+                "columns": [
+                    {
+                        "class": 'details-control',
+                        "orderable": false,
+                        "data": null,
+                        "defaultContent": '<a href="#" class="row-details-switcher"> <span class="glyphicon glyphicon-plus-sign"></span></a>'
+                    },
+                    {
+                        "width" : '5%',
+                        "data": "fundCode"
+                    },
+                    {
+                        "width" : '45%',
+                        "data": "foundName"
+                    },
+                    {
+                        "width" : '10%',
+                        "data": "generalFund.total"
+                    },
+                    {
+                        "width" : '10%',
+                        "data": "specialFund.total"
+                    },
+                    {
+                        "width" : '10%',
+                        "data": "specialFund.consumption.total"
+                    },
+                    {
+                        "width" : '10%',
+                        "data": "specialFund.development.total"
+                    },
+                    {
+                        "width" : '10%',
+                        "data": "total"
+                    }
+                ],
+                "order": [[1, 'asc']],
+                'language': {
+                    'url': 'js/plugins/jqueryDataTables/localization/ukrainian.txt'
+                },
+                'dom': '<"row"<"col-lg-6"l><"col-lg-6"f>r><"row"<"col-lg-12"t>><"row"<"col-lg-6"i><"col-lg-6"p>>',
+                'drawCallback': function(settings) {
+                    //Preventing default behaviour of switcher link to avoid jumping to top of the page
+                    $('.row-details-switcher').on('click', function (event) {
+                        event.preventDefault();
+                    });
+
+//                    _initializeEditableCells(budgetExpendituresTable);
+                },
+                'rowCallback': function (row, data) {
+                    if (!data.hasOwnProperty('items') || data['items'].length === 0) {
+                        $(row).find('td:first').empty();
+                    }
                 }
             });
+//            console.log(budgetExpendituresTable.tables());
+            // Add event listener for opening and closing details
+            _listenRowDetailsSwitcher(budgetExpendituresTable);
         };
 
         /**
-         * Drawing budget expenditures chart
-         *
+         * Event listener for opening and closing table row details
+         * @param dataTablesObject - instance of DataTables object
          * @private
          */
-        function _renderBudgetExpendituresChart() {
-            google.load('visualization', '1', {'callback': drawChart, 'packages':['corechart']});
-            function drawChart() {
-                var data = google.visualization.arrayToDataTable([
-                    ['Фонд', 'Сумма'],
-                    ['Державне управління',     23070500],
-                    ['Фонд 1',      23078970],
-                    ['Фонд 2',  25870500],
-                    ['Фонд 3', 15070500],
-                    ['Фонд 4',    3070500]
-                ]);
+        function _listenRowDetailsSwitcher(dataTablesObject) {
+            // Add event listener for opening and closing details
+            $(dataTablesObject.context[0].nTable).find('tbody').on('click', 'td.details-control', function () {
+                var tr = $(this).closest('tr');
+                var row = dataTablesObject.row( tr );
 
-                var options = {
-                    title: 'Видатки міського бюджету'
-                };
-
-                var chart = new google.visualization.PieChart($('#budgetExpendituresChart')[0]);
-
-                //For correct render of chart container need to be visible
-                var chartContainer = $('#budgetChartContainer');
-                if(chartContainer.is(':visible')){
-                    chart.draw(data, options);
+                if ( row.child.isShown() ) {
+                    // This row is already open - close it
+                    $(this).find('span').toggleClass('glyphicon-minus-sign glyphicon-plus-sign');
+                    row.child.hide();
+                    tr.removeClass('shown');
                 } else {
-                    chartContainer.show();
-                    chart.draw(data, options);
-                    chartContainer.hide();
+                    // Open this row
+                    $(this).find('span').toggleClass('glyphicon-plus-sign glyphicon-minus-sign');
+                    var newRow = _formatRowDetails(row.data(), tr);
+                    row.child( _formatRowDetails(row.data(), tr) ).show();
+                    row.child().find('td:first').closest('td').css({
+                        'paddingLeft': tr.find('td:first').outerWidth(),
+                        'borderRight':'none',
+                        'paddingRight': '0'
+                    });
+                    tr.addClass('shown');
+//                    console.log($(newRow));
+//                    $(newRow).tooltip();
                 }
-
-                google.visualization.events.addListener(chart, 'select', function() {
-                    var selected = chart.getSelection();
-                    $('#budgetExpendituresSubChart').empty();
-                    _renderBudgetExpendituresSubChart();
-                });
-            }
-
-        };
-
-        function _renderBudgetExpendituresSubChart() {
-            google.load('visualization', '1', {'callback': drawNewChart, 'packages': ['corechart']});
-            function drawNewChart() {
-                var data = google.visualization.arrayToDataTable([
-                    ['Суб Фонд', 'Сумма'],
-                    ['Суб Фонд 1', 3070500],
-                    ['Суб Фонд 2', 3078970],
-                    ['Суб Фонд 3', 5870500],
-                    ['Суб Фонд 4', 5070500],
-                    ['Суб Фонд 5', 070500]
-                ]);
-
-                var options = {
-                    title: 'Видатки міського бюджету -> Суб фонди'
-                };
-
-                var chart = new google.visualization.PieChart($('#budgetExpendituresSubChart')[0]);
-
-                //For correct rendering of chart container need to be visible.
-                var chartContainer = $('#budgetChartContainer');
-                if(chartContainer.is(':visible')){
-                    chart.draw(data, options);
-                } else {
-                    chartContainer.show();
-                    chart.draw(data, options);
-                    chartContainer.hide();
-                }
-            };
-        };
-
-        function _generateBudgetExpendituresTable() {
-            var tableBodyHTML = '';
-            $.each(_budgetExpendituresData, function(index, element) {
-                tableBodyHTML += '<tr>' +
-                    '<td>' + element["fundCode"] + '</td>' +
-                    '<td>' + element["foundName"] + '</td>' +
-                    '<td>' + element["generalFund"]["total"] + '</td>' +
-                    '<td>' + element["generalFund"]["wages"] + '</td>' +
-                    '<td>' + element["generalFund"]["utilities"] + '</td>' +
-                    '<td>' + element["specialFund"]["total"] + '</td>' +
-                    '<td>' + element["specialFund"]["consumption"]["total"] + '</td>' +
-                    '<td>' + element["specialFund"]["consumption"]["wages"] + '</td>' +
-                    '<td>' + element["specialFund"]["consumption"]["utilities"] + '</td>' +
-                    '<td>' + element["specialFund"]["development"]["total"] + '</td>' +
-                    '<td>' + element["specialFund"]["development"]["developmentBudget"] + '</td>' +
-                    '<td>' + element["specialFund"]["development"]["fromGeneralBudget"] + '</td>' +
-                    '<td>' + element["total"] + '</td>' +
-                '</tr>'
             });
-            return tableBodyHTML;
+        }
+
+        /**
+         * Formatting detail view with sub articles
+         * @param rowData - the original data object for the row.
+         * @param row - Jquery object of parent row
+         * @returns {string}
+         * @private
+         */
+        function _formatRowDetails(rowData, row) {
+            var columns = row.find('td');
+            var innerTable = '';
+            if (rowData.hasOwnProperty('items') || rowData['items'].length >= 0) {
+                innerTable += '<table class="table table-bordered table-hover table-condensed inner-table" style="width: ' + (row.outerWidth(true) - row.find('td:first').outerWidth(true)) + 'px;"><tbody>';
+                $.each(rowData.items, function (index, element) {
+                    innerTable += '<tr data-toggle="tooltip" title="Some tooltip text!" data-trigger="hover">' +
+                        '<td style="width: ' + $(columns[1]).width() + 'px;">' + element['fundCode'] + '</td>' +
+                        '<td style="width: ' + $(columns[2]).width() + 'px;">' + element['foundName'] + '</td>' +
+                        '<td style="width: ' + $(columns[3]).width() + 'px;">' + element['generalFund']['total'] + '</td>' +
+                        '<td style="width: ' + $(columns[4]).width() + 'px;">' + element['specialFund']['total'] + '</td>' +
+                        '<td style="width: ' + $(columns[5]).width() + 'px;">' + element['specialFund']['consumption']['total'] + '</td>' +
+                        '<td style="width: ' + $(columns[6]).width() + 'px;">' + element['specialFund']['development']['total'] + '</td>' +
+                        '<td style="width: ' + $(columns[7]).width() + 'px;">' + element['total'] + '</td>';
+                });
+                innerTable += '</tbody>';
+            }
+            return innerTable;
         }
 
         /**
@@ -209,9 +184,6 @@ var BudgetExpenditures = (function () {
          */
         function _initializeEditableCells(tableObject) {
             tableObject.find('tbody td').editable( function(value, settings) {
-                console.log(this);
-                console.log(value);
-                console.log(settings);
                 return(value)}, {
                 "callback": function( sValue, y ) {
                     tableObject.fnDraw();

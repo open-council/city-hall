@@ -1,0 +1,22 @@
+.row-details-switcher :hover {
+    text-decoration: none;
+}
+
+.row-details-switcher span.glyphicon-plus-sign {
+    color: #47a447;
+}
+.row-details-switcher span.glyphicon-plus-sign:hover {
+    color: #5cb85c;
+}
+
+.row-details-switcher span.glyphicon-minus-sign {
+    color: #f0ad4e;
+}
+.row-details-switcher span.glyphicon-minus-sign:hover {
+    color: #ed9c28;
+}
+
+table .inner-table {
+    margin-bottom: 0;
+    border-right: none;
+}

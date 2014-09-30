@@ -1,5 +1,5 @@
 .breadcrumb {
-	background: none;
+    background: none;
 }
 
 .padded-1 {
@@ -58,10 +58,10 @@
 .navigation-list .selected,
 .navigation-list .selected a,
 .navigation-list .selected a:hover {
-	color: white;
+    color: white;
 }
 .navigation-list .selected a {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 li.selected {
     display: block;
@@ -107,7 +107,7 @@ nav.navigation ul.nav li.active a {
 }
 .documents-list {
     /*font-size: 80%;*/
-   padding-right: 0;
+    padding-right: 0;
 }
 .breadcrumb-wrapper {
     border-bottom: 2px solid #003366;
@@ -116,7 +116,7 @@ nav.navigation ul.nav li.active a {
     margin-bottom: 0;
 }
 .table-wrapper table {
-    margin-left: -8px;
+    /*margin-left: -8px;*/
 }
 h1 .subheader {
     font-size: 77%;
@@ -134,7 +134,7 @@ img.left-aligned {
 
 .nav-font {
 	font-family: 'RistrettoPro-Regular';
-	font-size: 24px; 
+	font-size: 24px;
 }
 
 .top-line-menu {
@@ -190,7 +190,7 @@ footer {
 }
 
 footer .row {
-	padding: 1em;	
+	padding: 1em;
 }
 
 footer a {
@@ -201,7 +201,7 @@ footer a:hover {
 	color: #eeeeff;
 }
 
-/*.main-content {
+.main-content {
 	display: table !important;
 	-moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -211,11 +211,11 @@ footer a:hover {
 	display:table-row;
 	height: 100%;
 }
-.main-content .row .col-md-2, 
+.main-content .row .col-md-2,
 .main-content .row .col-md-9 {
 	display:table-cell;
-	float: none; 
-}*/
+	float: none;
+}
 
 .main-content .row .col-md-2 {
 	background-color: #D9E8F7;
@@ -227,12 +227,12 @@ footer a:hover {
 	font-family: "Times New Roman", Times, serif;
 }
 .document-header {
-	border-bottom: 2px solid #336699; 
+	border-bottom: 2px solid #336699;
 }
 
-.table-wrapper table tr:nth-child(n+3) td:nth-child(n+3) {
-	text-align: right !important;
-}
+/*.table-wrapper table tr:nth-child(n+3) td:nth-child(n+3) {*/
+	/*text-align: right !important;*/
+/*}*/
 
 .addon1 {
 	margin-bottom:1em;
@@ -252,7 +252,7 @@ footer a:hover {
 	color: white;
 }
 
-/* visual part */
+ visual part
 #canvas {
 width: 960px;
 background: #ddd;
@@ -287,4 +287,4 @@ fill-opacity: .5;
 }
 .children:hover rect.child {
 fill: #bbb;
-} 
+}
